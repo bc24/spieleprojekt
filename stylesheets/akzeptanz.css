@@ -1,0 +1,20 @@
+body {
+  margin-top: 5%;
+  text-align: center;
+}
+.glyphicon {
+    font-size: 250px;
+    margin-top: 20px;
+}
+.thumbnail {
+  margin-top: -30px;
+  padding-bottom: 100px;
+}
+#verbesserung{
+    width: 1000px;
+    height: 200px;
+}
+/*Slider*/
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}
