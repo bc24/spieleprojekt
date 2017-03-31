@@ -42,7 +42,7 @@
                     <div>
                         <h4> Ist die Steuerung Bomberman/ Teeworld intuitiv und einfach?  </h4>
                         <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
-
+                        <!-- Slider einfügen (1-10 Punkte) -->
                     </div>
                 </div>
                 <div class="thumbnail">
