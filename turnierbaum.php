@@ -25,6 +25,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-6 col-md-12">
+              <div class="turnierbaum">
                 <div class="thumbnail">
                   <div class="row">
 
@@ -48,8 +49,24 @@
                     </div>
                 </div>
             </div>
+          </div>
         </div>
     </div>
 </body>
 
+
+<script>
+
+  function loadTurnierbaum() {
+    $.ajax({
+      url: "turnierbaum/turnierbaum.html",
+      cache: false,
+      success: function(html){
+        $('.turnierbaum').html(html);
+      },
+    });
+  }
+
+setInterval (loadTurnierbaum, 3000);
+</script>
 </html>
