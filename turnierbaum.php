@@ -18,7 +18,7 @@
     <script src="scripts\bootstrap-3.3.7\dist\js\bootstrap.min.js"></script>
 
     <!-- Stylesheet akzeptanz.css -->
-    <link rel="stylesheet" href="stylesheets/akzeptanz.css">
+    <!--<link rel="stylesheet" href="stylesheets/akzeptanz.css">-->
 </head>
 
 <body>
@@ -59,7 +59,7 @@
 
   function loadTurnierbaum() {
     $.ajax({
-      url: "turnierbaum/turnierbaum.html",
+      url: "turnierbaum/turnierbaum-new.html",
       cache: false,
       success: function(html){
         $('.turnierbaum').html(html);
@@ -67,6 +67,6 @@
     });
   }
 
-setInterval (loadTurnierbaum, 3000);
+setInterval (loadTurnierbaum, 7000);
 </script>
 </html>
