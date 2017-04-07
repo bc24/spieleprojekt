@@ -19,6 +19,7 @@
 
     <!-- Stylesheet standard.css -->
     <link rel="stylesheet" href="stylesheets/akzeptanz.css">
+    <link rel="stylesheet" href="stylesheets/rangestyle.css">
 
     <!-- Slider -->
     <script src="scripts\ion.rangeSlider-2.1.7\js\ion-rangeSlider\ion.rangeSlider.js"></script>
@@ -43,14 +44,10 @@
                     </div>
                     <div >
                         <h4> Ist die Steuerung Bomberman/ Teeworld intuitiv und einfach?  </h4>
-                        <input type="range" id="sliderFrage1" name="sliderFrage1" value="" />
+                        <input type="range" id="sliderFrage1" name="sliderFrage1" min="1" max ="10" value="5"/>
                         <input type="range" id="sliderFrage2" name="sliderFrage2" value="" />
                     </div>
-                    <div class="range-slider" data-slider>
-                        <span class="range-slider-handle" role="slider" tabindex="0"></span>
-                        <span class="range-slider-active-segment"></span>
-                        <input type="hidden">
-                      </div>
+
                 </div>
                 <div class="thumbnail">
                     <div class="caption">
@@ -148,12 +145,12 @@
 
     <script>
 
-    $("#sliderFrage1").ionRangeSlider({
-      min:0, max:10, from:5 , grid:true
-    });
-    $("#sliderFrage2").ionRangeSlider({
-      min:0, max:10, from:5 , grid:true
-    });
+    // $("#sliderFrage1").ionRangeSlider({
+    //   min:0, max:10, from:5 , grid:true
+    // });
+    // $("#sliderFrage2").ionRangeSlider({
+    //   min:0, max:10, from:5 , grid:true
+    // });
 
     </script>
 
