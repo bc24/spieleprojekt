@@ -22,17 +22,15 @@
     <link rel="stylesheet" href="stylesheets/rangestyle.css">
 
 
-    <!-- Slider -->
-    <script src="scripts\ion.rangeSlider-2.1.7\js\ion-rangeSlider\ion.rangeSlider.js"></script>
-    <link rel="stylesheet" href="scripts\ion.rangeSlider-2.1.7\css\ion.rangeSlider.skinHTML5.css">
-    <link rel="stylesheet" href="scripts\ion.rangeSlider-2.1.7\css\ion.rangeSlider.css">
-
-    <!-- <script src="scripts\Slider\js\app.js"></script>
-    <link rel="stylesheet" href="scripts\Slider\css\foundation.min.css"> -->
-    <!-- <link rel="stylesheet" href="scripts\ion.rangeSlider-2.1.7\css\ion.rangeSlider.css"> -->
+    <script>
+    $('#ex1').slider({
+        formatter: function(value) {
+            return 'Current value: ' + value;
+        }
+    });
 
 
-
+    </script>
 </head>
 
 <body>
@@ -43,12 +41,18 @@
                     <div class="caption">
                         <h3>Frage 1</h3>
                     </div>
-                    <div >
+                    <div>
                         <h4> Ist die Steuerung Bomberman/ Teeworld intuitiv und einfach?  </h4>
+<<<<<<< HEAD
                         <input type="range" id="sliderFrage1" class="sliderFAQ" name="sliderF1" min="1" max ="10" value="5"/>
                         <input type="range" id="sliderFrage2" class="sliderFAQ" name="sliderF2" min="1" max ="10" value="5" />
                     </div>
 
+=======
+                        <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+                        <!-- Slider einfügen (1-10 Punkte) -->
+                    </div>
+>>>>>>> origin/master
                 </div>
                 <div class="thumbnail">
                     <div class="caption">
@@ -144,6 +148,7 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <script>
 
     // $("#sliderFrage1").ionRangeSlider({
@@ -152,8 +157,9 @@
     // $("#sliderFrage2").ionRangeSlider({
     //   min:0, max:10, from:5 , grid:true
     // });
+=======
+>>>>>>> origin/master
 
-    </script>
 
 
 </body>
