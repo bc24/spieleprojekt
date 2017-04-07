@@ -17,8 +17,8 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="scripts\bootstrap-3.3.7\dist\js\bootstrap.min.js"></script>
 
-    <!-- Stylesheet akzeptanz.css -->
-    <!--<link rel="stylesheet" href="stylesheets/akzeptanz.css">-->
+    <!-- Stylesheet turnierbaum.css -->
+    <link rel="stylesheet" href="stylesheets/turnierbaum.css">
 </head>
 
 <body>
@@ -57,9 +57,13 @@
 
 <script>
 
+$(document).ready(function(){
+  loadTurnierbaum();
+});
+
   function loadTurnierbaum() {
     $.ajax({
-      url: "turnierbaum/turnierbaum-new.html",
+      url: "turnierbaum/turnierbaum-test.html",
       cache: false,
       success: function(html){
         $('.turnierbaum').html(html);
