@@ -20,15 +20,17 @@
     <!-- Stylesheet standard.css -->
     <link rel="stylesheet" href="stylesheets/akzeptanz.css">
 
-    <script>
-    $('#ex1').slider({
-        formatter: function(value) {
-            return 'Current value: ' + value;
-        }
-    });
+    <!-- Slider -->
+    <script src="scripts\ion.rangeSlider-2.1.7\js\ion-rangeSlider\ion.rangeSlider.js"></script>
+    <link rel="stylesheet" href="scripts\ion.rangeSlider-2.1.7\css\ion.rangeSlider.skinHTML5.css">
+    <link rel="stylesheet" href="scripts\ion.rangeSlider-2.1.7\css\ion.rangeSlider.css">
+
+    <!-- <script src="scripts\Slider\js\app.js"></script>
+    <link rel="stylesheet" href="scripts\Slider\css\foundation.min.css"> -->
+    <!-- <link rel="stylesheet" href="scripts\ion.rangeSlider-2.1.7\css\ion.rangeSlider.css"> -->
 
 
-    </script>
+
 </head>
 
 <body>
@@ -39,11 +41,16 @@
                     <div class="caption">
                         <h3>Frage 1</h3>
                     </div>
-                    <div>
+                    <div >
                         <h4> Ist die Steuerung Bomberman/ Teeworld intuitiv und einfach?  </h4>
-                        <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
-                        <!-- Slider einfügen (1-10 Punkte) -->
+                        <input type="range" id="sliderFrage1" name="sliderFrage1" value="" />
+                        <input type="range" id="sliderFrage2" name="sliderFrage2" value="" />
                     </div>
+                    <div class="range-slider" data-slider>
+                        <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                        <span class="range-slider-active-segment"></span>
+                        <input type="hidden">
+                      </div>
                 </div>
                 <div class="thumbnail">
                     <div class="caption">
@@ -139,7 +146,16 @@
         </div>
     </div>
 
+    <script>
 
+    $("#sliderFrage1").ionRangeSlider({
+      min:0, max:10, from:5 , grid:true
+    });
+    $("#sliderFrage2").ionRangeSlider({
+      min:0, max:10, from:5 , grid:true
+    });
+
+    </script>
 
 
 </body>
