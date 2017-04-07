@@ -159,6 +159,10 @@
     .input_tabelle_raum {
         width: 50px;
     }
+
+    .punkteSchieben  {
+        margin-left: -15%;
+    }
 </style>
 <!-- Start des Headers -->
 <div class="thumbnail">
@@ -703,8 +707,8 @@
             <div class="col-md-9 col-md-offset-1">
                 <div class="punkte">
                     <h3><span>Punkte:</span></h3>
-                    <h3><span id="punkteLinks"><input type="text" class="form-control input_teeworlds" placeholder="Platzhalter"></span></h3>
-                    <h3><span id="punkteRechts"><input type="text" class="form-control input_teeworlds" placeholder="Platzhalter"></span></h3>
+                    <h3><span id="punkteLinks"><input type="text" class="form-control input_teeworlds punkteSchieben" id="teeworlds_game1_teamLeft" placeholder="Platzhalter"></span></h3>
+                    <h3><span id="punkteRechts"><input type="text" class="form-control input_teeworlds punkteSchieben" id="teeworlds_game1_teamRight" placeholder="Platzhalter"></span></h3>
                 </div>
             </div>
             <div class="col-md-9 col-md-offset-1">
@@ -738,8 +742,8 @@
             <div class="col-md-9 col-md-offset-1">
                 <div class="punkte">
                     <h3><span>Punkte:</span></h3>
-                    <h3><span id="punkteLinks"><input type="text" class="form-control input_teeworlds" placeholder="Platzhalter"></span></h3>
-                    <h3><span id="punkteRechts"><input type="text" class="form-control input_teeworlds" placeholder="Platzhalter"></span></h3>
+                    <h3><span id="punkteLinks"><input type="text" class="form-control input_teeworlds punkteSchieben" id="game2_teamLeft" placeholder="Platzhalter"></span></h3>
+                    <h3><span id="punkteRechts"><input type="text" class="form-control input_teeworlds punkteSchieben" id="game2_teamRight" placeholder="Platzhalter"></span></h3>
                 </div>
             </div>
             <div class="col-md-9 col-md-offset-1">
@@ -773,8 +777,8 @@
             <div class="col-md-9 col-md-offset-1">
                 <div class="punkte">
                     <h3><span>Punkte:</span></h3>
-                    <h3><span id="punkteLinks"><input type="text" class="form-control input_teeworlds" placeholder="Platzhalter"></span></h3>
-                    <h3><span id="punkteRechts"><input type="text" class="form-control input_teeworlds" placeholder="Platzhalter"></span></h3>
+                    <h3><span id="punkteLinks"><input type="text" class="form-control input_teeworlds punkteSchieben" id="game3_teamLeft" placeholder="Platzhalter"></span></h3>
+                    <h3><span id="punkteRechts"><input type="text" class="form-control input_teeworlds punkteSchieben" id="game3_teamRight" placeholder="Platzhalter"></span></h3>
                 </div>
             </div>
             <div class="col-md-9 col-md-offset-1">
@@ -808,8 +812,8 @@
             <div class="col-md-9 col-md-offset-1">
                 <div class="punkte">
                     <h3><span>Punkte:</span></h3>
-                    <h3><span id="punkteLinks"><input type="text" class="form-control input_teeworlds" placeholder="Platzhalter"></span></h3>
-                    <h3><span id="punkteRechts"><input type="text" class="form-control input_teeworlds" placeholder="Platzhalter"></span></h3>
+                    <h3><span id="punkteLinks"><input type="text" class="form-control input_teeworlds punkteSchieben" id="game4_teamLeft" placeholder="Platzhalter"></span></h3>
+                    <h3><span id="punkteRechts"><input type="text" class="form-control input_teeworlds punkteSchieben" id="game4_teamRight" placeholder="Platzhalter"></span></h3>
                 </div>
             </div>
             <div class="col-md-9 col-md-offset-1">
@@ -843,8 +847,8 @@
             <div class="col-md-9 col-md-offset-1">
                 <div class="punkte">
                     <h3><span>Punkte:</span></h3>
-                    <h3><span id="punkteLinks"><input type="text" class="form-control input_teeworlds" placeholder="Platzhalter"></span></h3>
-                    <h3><span id="punkteRechts"><input type="text" class="form-control input_teeworlds" placeholder="Platzhalter"></span></h3>
+                    <h3><span id="punkteLinks"><input type="text" class="form-control input_teeworlds punkteSchieben" id="game5_teamLeft" placeholder="Platzhalter"></span></h3>
+                    <h3><span id="punkteRechts"><input type="text" class="form-control input_teeworlds punkteSchieben" id="game5_teamRight" placeholder="Platzhalter"></span></h3>
                 </div>
             </div>
             <div class="col-md-9 col-md-offset-1">
@@ -878,8 +882,8 @@
             <div class="col-md-9 col-md-offset-1">
                 <div class="punkte">
                     <h3><span>Punkte:</span></h3>
-                    <h3><span id="punkteLinks"><input type="text" class="form-control input_teeworlds" placeholder="Platzhalter"></span></h3>
-                    <h3><span id="punkteRechts"><input type="text" class="form-control input_teeworlds" placeholder="Platzhalter"></span></h3>
+                    <h3><span id="punkteLinks"><input type="text" class="form-control input_teeworlds punkteSchieben" id="game6_teamLeft" placeholder="Platzhalter"></span></h3>
+                    <h3><span id="punkteRechts"><input type="text" class="form-control input_teeworlds punkteSchieben" id="game6_teamRight" placeholder="Platzhalter"></span></h3>
                 </div>
             </div>
             <div class="col-md-9 col-md-offset-1">
@@ -1140,19 +1144,46 @@
             $('#bomberman_table8_playerFour_place').val()
         ];
 
+        var teeworlds_game1 = [$('#teeworlds_game1_teamLeft').val(),
+            $('#teeworlds_game1_teamRight').val()
+        ];
+        // var teeworlds_game2 = [$('#game2_teamLeft').val(),
+        //     $('#game2_teamRight').val()
+        // ];
+        //
+        // var teeworlds_game3 = [$('#game3_teamLeft').val(),
+        //     $('#game3_teamRight').val()
+        // ];
+        //
+        // var teeworlds_game4 = [$('#game4_teamLeft').val(),
+        //     $('#game4_teamRight').val()
+        // ];
+        //
+        // var teeworlds_game5 = [$('#game5_teamLeft').val(),
+        //     $('#game5_teamRight').val()
+        // ];
+        //
+        // var teeworlds_game6 = [$('#game6_teamLeft').val(),
+        //     $('#game6_teamRight').val()
+        // ];
 
-        var values = $('#playerOne').val();
         $.post("admin-turnierbaum-update.php", {
-            bomberman_table1: bomberman_table1,
-            bomberman_table2: bomberman_table2,
-            bomberman_table3: bomberman_table3,
-            bomberman_table4: bomberman_table4,
-            bomberman_table5: bomberman_table5,
-            bomberman_table6: bomberman_table6,
-            bomberman_table7: bomberman_table7,
-            bomberman_table8: bomberman_table8
+            // bomberman_table1: bomberman_table1,
+            // bomberman_table2: bomberman_table2,
+            // bomberman_table3: bomberman_table3,
+            // bomberman_table4: bomberman_table4,
+            // bomberman_table5: bomberman_table5,
+            // bomberman_table6: bomberman_table6,
+            // bomberman_table7: bomberman_table7,
+            // bomberman_table8: bomberman_table8,
+            teeworlds_game1_test: teeworlds_game1
+            teeworlds_game1: teeworlds_game1,
+            teeworlds_game2: teeworlds_game2,
+            teeworlds_game3: teeworlds_game3,
+            teeworlds_game4: teeworlds_game4,
+            teeworlds_game5: teeworlds_game5,
+            teeworlds_game6: teeworlds_game6
         });
-        // $("#saveData").attr("value", "");
         return false;
     });
 </script>
