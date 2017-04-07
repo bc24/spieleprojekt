@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="stylesheets/akzeptanz.css">
     <link rel="stylesheet" href="stylesheets/rangestyle.css">
 
+
     <!-- Slider -->
     <script src="scripts\ion.rangeSlider-2.1.7\js\ion-rangeSlider\ion.rangeSlider.js"></script>
     <link rel="stylesheet" href="scripts\ion.rangeSlider-2.1.7\css\ion.rangeSlider.skinHTML5.css">
@@ -44,8 +45,8 @@
                     </div>
                     <div >
                         <h4> Ist die Steuerung Bomberman/ Teeworld intuitiv und einfach?  </h4>
-                        <input type="range" id="sliderFrage1" name="sliderFrage1" min="1" max ="10" value="5"/>
-                        <input type="range" id="sliderFrage2" name="sliderFrage2" value="" />
+                        <input type="range" id="sliderFrage1" class="sliderFAQ" name="sliderF1" min="1" max ="10" value="5"/>
+                        <input type="range" id="sliderFrage2" class="sliderFAQ" name="sliderF2" min="1" max ="10" value="5" />
                     </div>
 
                 </div>
