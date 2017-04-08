@@ -15,19 +15,20 @@ body {
     height: 200px;
 }
 /*Slider*/
+#frage1slider{
+  position: absolute;
+    width: 600px;
+    height: 1000px;
+    margin-left: 34%;
+}
 .sliderFAQ{
   height: 40px;
-
 
 }
 
 #sliderFrage1{
     width: 400px;
-    margin-left: 34%;
-
 }
 #sliderFrage2{
     width: 400px;
-    margin-left: 34%;
-
 }

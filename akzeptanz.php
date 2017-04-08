@@ -20,146 +20,14 @@
     <!-- Stylesheet standard.css -->
     <link rel="stylesheet" href="stylesheets/akzeptanz.css">
     <link rel="stylesheet" href="stylesheets/rangestyle.css">
+    <script src="scripts\akzeptanz.js"></script>
 
 
-    <script>
-    $('#ex1').slider({
-        formatter: function(value) {
-            return 'Current value: ' + value;
-        }
-    });
-
-
-    </script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-6 col-md-12">
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Frage 1</h3>
-                    </div>
-                    <div>
-                        <h4> Ist die Steuerung Bomberman/ Teeworld intuitiv und einfach?  </h4>
-<<<<<<< HEAD
-                        <input type="range" id="sliderFrage1" class="sliderFAQ" name="sliderF1" min="1" max ="10" value="5"/>
-                        <input type="range" id="sliderFrage2" class="sliderFAQ" name="sliderF2" min="1" max ="10" value="5" />
-                    </div>
 
-=======
-                        <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
-                        <!-- Slider einfügen (1-10 Punkte) -->
-                    </div>
->>>>>>> origin/master
-                </div>
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Frage 2</h3>
-                    </div>
-                    <div>
-                        <h4>Liefen die Spiele flüssig und reibungslos? </h4>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Frage 3</h3>
-                    </div>
-                    <div>
-                        <h4>War die Spielzeit pro Match ausreichend?</h4>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Frage 4</h3>
-                    </div>
-                    <div>
-                        <h4> Ist das Turniersystem gut gewählt worden? </h4>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Frage 5</h3>
-                    </div>
-                    <div>
-                        <h4>Hattet ihr Spaß beim spielen?</h4>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Frage 6</h3>
-                    </div>
-                    <div>
-                        <h4>Sind die Regeln angemessen und fair gewesen?</h4>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Frage 7</h3>
-                    </div>
-                    <div>
-                        <h4>Wurde das Potenzial des Spieles vollkommen ausgenutzt?</h4>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Frage 8</h3>
-                    </div>
-                    <div>
-                        <h4> Sind die Team fair verteilt und gleich stark gewesen?</h4>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Frage 9</h3>
-                    </div>
-                    <div>
-                        <h4>War der Ablauf koordiniert und nachvollziehbar? </h4>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Frage 10</h3>
-                    </div>
-                    <div>
-                        <h4>Seid ihr eine ausreichende Zeit beschäftigt gewesen oder gab es zu lange Wartepausen?</h4>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Frage 11</h3>
-                    </div>
-                    <div>
-                        <h4> Haben die Spiele euch überfordert oder wurde alles erklärt.</h4>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Frage 12</h3>
-                    </div>
-                    <div>
-                        <h4>Gibt es Verbesserungsvorschläge?</h4>
-                        <br>
-                        <textarea id="verbesserung"> </textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<<<<<<< HEAD
-    <script>
-
-    // $("#sliderFrage1").ionRangeSlider({
-    //   min:0, max:10, from:5 , grid:true
-    // });
-    // $("#sliderFrage2").ionRangeSlider({
-    //   min:0, max:10, from:5 , grid:true
-    // });
-=======
->>>>>>> origin/master
-
+<!-- Alles neu machen! -->
 
 
 </body>
