@@ -1,24 +1,24 @@
 <?php
 session_start();
-// $bomberman_table1 =$_POST['bomberman_table1'];
-// $bomberman_table2 =$_POST['bomberman_table2'];
-// $bomberman_table3 =$_POST['bomberman_table3'];
-// $bomberman_table4 =$_POST['bomberman_table4'];
-// $bomberman_table5 =$_POST['bomberman_table5'];
-// $bomberman_table6 =$_POST['bomberman_table6'];
-// $bomberman_table7 =$_POST['bomberman_table7'];
-// $bomberman_table8 =$_POST['bomberman_table8'];
-$teeworlds_game1_test =$_POST['$teeworlds_game1_test'];
-$teeworlds_game2 =$_POST['$teeworlds_game2'];
-$teeworlds_game3 =$_POST['$teeworlds_game3'];
-$teeworlds_game4 =$_POST['$teeworlds_game4'];
-$teeworlds_game5 =$_POST['$teeworlds_game5'];
-$teeworlds_game6 =$_POST['$teeworlds_game6'];
+$bomberman_table1 =$_POST['bomberman_table1'];
+$bomberman_table2 =$_POST['bomberman_table2'];
+$bomberman_table3 =$_POST['bomberman_table3'];
+$bomberman_table4 =$_POST['bomberman_table4'];
+$bomberman_table5 =$_POST['bomberman_table5'];
+$bomberman_table6 =$_POST['bomberman_table6'];
+$bomberman_table7 =$_POST['bomberman_table7'];
+$bomberman_table8 =$_POST['bomberman_table8'];
+$tw_firstgame = $_POST['tw_firstgame'];
+$tw_secondgame = $_POST['tw_secondgame'];
+$tw_thirdgame = $_POST['tw_thirdgame'];
+$tw_fourthgame = $_POST['tw_fourthgame'];
+$tw_fifthgame = $_POST['tw_fifthgame'];
+$tw_sixthgame = $_POST['tw_sixthgame'];
 file_put_contents('../turnierbaum/turnierbaum-test.html',
 "
 <!-- Start des Headers -->
 <div class='thumbnail'>
-    <h1 class='text-center' id='header-top'><strong>Turnierbaum $bomberman_table1[0]</strong></h1>
+    <h1 class='text-center' id='header-top'><strong>Turnierbaum</strong></h1>
     <div class='panel panel-default'>
         <div class='panel-body text-center' id='panel-header'>
             Hier findest du alle Informationen zu den aktuellen Spielen :) Die Seite aktualisiert sich aller 7 Sekunden automatisch.
@@ -47,7 +47,7 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
         <thead>
             <tr>
                 <th>Raum 1</th>
-                <th>$teeworlds_game1_test[0]</th>
+                <th>$bomberman_table1[0]</th>
                 <th>$bomberman_table1[1]</th>
                 <th>$bomberman_table1[2]</th>
                 <th>$bomberman_table1[3]</th>
@@ -558,8 +558,8 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             <div class='col-md-9 col-md-offset-1'>
             <div class='punkte'>
               <h3><span>Punkte:</span></h3>
-              <h3><span id='punkteLinks'>$teeworlds_game1_test[0]X</span></h3>
-              <h3><span id='punkteRechts'>$teeworlds_game1[1]</span></h3>
+              <h3><span id='punkteLinks'>$tw_firstgame[0]</span></h3>
+              <h3><span id='punkteRechts'>$tw_firstgame[1]</span></h3>
             </div>
           </div>
           <div class='col-md-9 col-md-offset-1'>
@@ -593,8 +593,8 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             <div class='col-md-9 col-md-offset-1'>
             <div class='punkte'>
               <h3><span>Punkte:</span></h3>
-              <h3><span id='punkteLinks'>$teeworlds_game2[0]</span></h3>
-              <h3><span id='punkteRechts'>$teeworlds_game2[1]</span></h3>
+              <h3><span id='punkteLinks'>$tw_secondgame[0]</span></h3>
+              <h3><span id='punkteRechts'>$tw_secondgame[1]</span></h3>
             </div>
           </div>
           <div class='col-md-9 col-md-offset-1'>
@@ -628,8 +628,8 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             <div class='col-md-9 col-md-offset-1'>
             <div class='punkte'>
               <h3><span>Punkte:</span></h3>
-              <h3><span id='punkteLinks'>$teeworlds_game3[0]</span></h3>
-              <h3><span id='punkteRechts'>$teeworlds_game3[1]</span></h3>
+              <h3><span id='punkteLinks'>$tw_thirdgame[0]</span></h3>
+              <h3><span id='punkteRechts'>$tw_thirdgame[1]</span></h3>
             </div>
           </div>
           <div class='col-md-9 col-md-offset-1'>
@@ -663,8 +663,8 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             <div class='col-md-9 col-md-offset-1'>
             <div class='punkte'>
               <h3><span>Punkte:</span></h3>
-              <h3><span id='punkteLinks'>$teeworlds_game4[0]</span></h3>
-              <h3><span id='punkteRechts'>$teeworlds_game4[1]</span></h3>
+              <h3><span id='punkteLinks'>$tw_fourthgame[0]</span></h3>
+              <h3><span id='punkteRechts'>$tw_fourthgame[1]</span></h3>
             </div>
           </div>
           <div class='col-md-9 col-md-offset-1'>
@@ -698,8 +698,8 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             <div class='col-md-9 col-md-offset-1'>
             <div class='punkte'>
               <h3><span>Punkte:</span></h3>
-              <h3><span id='punkteLinks'>$teeworlds_game5[0]</span></h3>
-              <h3><span id='punkteRechts'>$teeworlds_game5[1]</span></h3>
+              <h3><span id='punkteLinks'>$tw_fifthgame[0]</span></h3>
+              <h3><span id='punkteRechts'>$tw_fifthgame[1]</span></h3>
             </div>
           </div>
           <div class='col-md-9 col-md-offset-1'>
@@ -733,8 +733,8 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             <div class='col-md-9 col-md-offset-1'>
             <div class='punkte'>
               <h3><span>Punkte:</span></h3>
-              <h3><span id='punkteLinks'>$teeworlds_game6[0]</span></h3>
-              <h3><span id='punkteRechts'>$teeworlds_game6[1]</span></h3>
+              <h3><span id='punkteLinks'>$tw_sixthgame[0]</span></h3>
+              <h3><span id='punkteRechts'>$tw_sixthgame[1]</span></h3>
             </div>
           </div>
           <div class='col-md-9 col-md-offset-1'>
