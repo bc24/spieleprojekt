@@ -1,53 +1,69 @@
-body {
-  margin-top: 5%;
-  text-align: center;
-  margin-left: -32%;
-}
-.glyphicon {
-    font-size: 50px;
-    margin-top: 0px;
-    padding: 0;
-    margin-left: -90%;
-}
+/* Start des CSS für Header */
+
 .thumbnail {
-  margin-top: -30px;
-  padding-bottom: 100px;
-  margin-left: 0px;
+    width: 1140px;
+    height: auto;
 }
-.caption {
-  margin-left: -90%;
-  padding: 0px;
-  margin-top: -2%;
+#header-top {
+    font-size: 65px;
+    margin-bottom: 25px;
 }
-#startzeit {
-  margin-top: -10%;
-  margin-left: -60%;
+#header {
+    font-size: 60px;
+    margin-bottom: 25px;
 }
-#dauer {
-  margin-left: -60%;
+/* Ende des CSS für Header */
+/* Start des CSS für Header-Bomberman */
+
+.thumbnail-bomberman {
+    height: auto;
 }
-#teamLinks {
-  margin-left: -20%;
+/* Ende des CSS für Header-Bomberman */
+/* Start des CSS für Header-Vorrunde-Bomberman */
+
+#header-vorrunde {
+    font-size: 45px;
+    margin-bottom: 25px;
 }
-#teamRechts {
-  margin-right: -20%;
-  margin-top: -4.15%;
+/* Ende des CSS für Header-Vorrunde-Bomberman */
+/* Start des CSS für Game-Teeworlds */
+.glyphicon {
+    font-size: 120px;
 }
-#versus {
-  margin-top: -5%;
+
+.icon_und_spielNummer {
+    width: 120px;
 }
-#punkteText {
-margin-left: -40%;
-margin-top: -0%;
+
+#gameNumber {
+    margin-top: -2px;
+    text-align: center;
 }
-#punkteTeamLinks {
-margin-left: 212px;
-margin-top: -38px;
+
+.teams_und_vs {
+    margin-top: 3%;
+    text-align: center;
 }
-#punkteTeamRechts {
-margin-left: 325px;
-margin-top: -34px;
+
+.teams_und_vs h3 {
+    display: inline;
+    font-size: 55px;
 }
-.form-control {
-  width: 50px;
+.punkte h3 {
+  display: inline;
+  font-size: 30px;
+}
+#punkteLinks {
+  margin-left: 17%;
+}
+#punkteRechts {
+  margin-left: 30.5%;
+}
+.start_und_dauer h3 {
+  display: inline;
+}
+/* Ende des CSS für Game-Teeworlds */
+.active-game {
+  border-color: green;
+  border-width: 5px;
 }

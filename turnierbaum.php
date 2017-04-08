@@ -17,8 +17,8 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="scripts\bootstrap-3.3.7\dist\js\bootstrap.min.js"></script>
 
-    <!-- Stylesheet akzeptanz.css -->
-    <!--<link rel="stylesheet" href="stylesheets/akzeptanz.css">-->
+    <!-- Stylesheet turnierbaum.css -->
+    <link rel="stylesheet" href="stylesheets/turnierbaum.css">
 </head>
 
 <body>
@@ -26,28 +26,6 @@
         <div class="row">
             <div class="col-xs-6 col-md-12">
               <div class="turnierbaum">
-                <div class="thumbnail">
-                  <div class="row">
-
-                    <div class="col-md-6">
-                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                    <div class="caption">
-                        <h3>Turnierbaum</h3>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="jumbotron">
-                      Random Text hier
-                    </div>
-                  </div>
-                  </div>
-                </div>
-                <div class="thumbnail">
-                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                    <div class="caption">
-                        <h3>Akzeptanzanalyse</h3>
-                    </div>
-                </div>
             </div>
           </div>
         </div>
@@ -57,9 +35,13 @@
 
 <script>
 
+$(document).ready(function(){
+  loadTurnierbaum();
+});
+
   function loadTurnierbaum() {
     $.ajax({
-      url: "turnierbaum/turnierbaum-new.html",
+      url: "turnierbaum/turnierbaum-test.html",
       cache: false,
       success: function(html){
         $('.turnierbaum').html(html);
