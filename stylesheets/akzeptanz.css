@@ -1,34 +1,45 @@
 body {
-  margin-top: 5%;
   text-align: center;
+  font-size:24px;
 }
-.glyphicon {
-    font-size: 250px;
-    margin-top: 20px;
+
+#headline{
+  text-align: center;
+  font-size: 30px;
 }
-.thumbnail {
-  margin-top: -30px;
-  padding-bottom: 100px;
+
+.block{
+  margin-top: 5px;
+  width:70%;
+  height: 300px;
+  border:2px;
+  border-style: solid;
+  border-color: #DDDDDD;
+  margin-left: 15%;
 }
-#verbesserung{
-    width: 1000px;
-    height: 200px;
+
+#blockheadline{
+  height: 100px;
+  margin-top: 0;
+  padding-top: 0;
 }
-/*Slider*/
-#frage1slider{
-  position: absolute;
-    width: 600px;
-    height: 1000px;
-    margin-left: 34%;
+
+#blockanfang{
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
 }
-.sliderFAQ{
-  height: 40px;
+
+.sliderbox{
+  padding-top:20px;
+}
+
+.slider{
+  padding-left: 30px;
+}
+
+.schriftSlider{
 
 }
 
-#sliderFrage1{
-    width: 400px;
-}
-#sliderFrage2{
-    width: 400px;
-}
+/*.btn-success{color:#fff;background-color:#5cb85c;border-color:#4cae4c}
+.btn-success.focus,.btn-success:focus{color:#fff;background-color:#449d44;border-color:#255625}.btn-success:hover{color:#fff;background-color:#449d44;border-color:#398439}.btn-success.active,.btn-success:active,.open>.dropdown-toggle.btn-success{color:#fff;background-color:#449d44;border-color:#398439}.btn-success.active.focus,.btn-success.active:focus,.btn-success.active:hover,.btn-success:active.focus,.btn-success:active:focus,.btn-success:active:hover,.open>.dropdown-toggle.btn-success.focus,.open>.dropdown-toggle.btn-success:focus,.open>.dropdown-toggle.btn-success:hover{color:#fff;background-color:#398439;border-color:#255625}.btn-success.active,.btn-success:active,.open>.dropdown-toggle.btn-success{background-image:none}.btn-success.disabled.focus,.btn-success.disabled:focus,.btn-success.disabled:hover,.btn-success[disabled].focus,.btn-success[disabled]:focus,.btn-success[disabled]:hover,fieldset[disabled] .btn-success.focus,fieldset[disabled] .btn-success:focus,fieldset[disabled] .btn-success:hover{background-color:#5cb85c;border-color:#4cae4c}.btn-success*/
