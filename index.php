@@ -50,10 +50,10 @@
                 </div>
             </div>
 
-			<div class="col-md-2">
+			<!-- <div class="col-md-2">
 				<input type="button" class="btn btn-danger" id="logout" value="Ausloggen" name="LogOut">
 				<input type="button" class="btn btn-danger" id="logout1" value="Ausloggen" name="LogOut">
-			</div>
+			</div> -->
 
         </div>
     </div>
