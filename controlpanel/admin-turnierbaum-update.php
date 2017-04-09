@@ -14,6 +14,17 @@ $tw_thirdgame = $_POST['tw_thirdgame'];
 $tw_fourthgame = $_POST['tw_fourthgame'];
 $tw_fifthgame = $_POST['tw_fifthgame'];
 $tw_sixthgame = $_POST['tw_sixthgame'];
+$bomberman_table1_button = $_POST['bomberman_table1_button'];
+$test = 'inactive';
+if ($bomberman_table1_button[0] == 'true')
+{
+  global $test;
+  $test = "active-game";
+}
+else {
+  global $test;
+  $test = "kacken";
+}
 file_put_contents('../turnierbaum/turnierbaum-test.html',
 "
 <!-- Start des Headers -->
@@ -42,7 +53,7 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 </div>
 <!-- Ende des Headers-Vorrunde-Bomberman -->
 <!-- Start des Table-Raum1-Bomberman -->
-<div class='thumbnail active-game'>
+<div class='thumbnail $test'>
     <table class='table table-bordered'>
         <thead>
             <tr>
@@ -103,7 +114,7 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 </div>
 <!-- Ende des Table-Raum1-Bomberman -->
 <!-- Start des Table-Raum2-Bomberman -->
-<div class='thumbnail'>
+<div class='thumbnail $test'>
 <table class='table table-bordered'>
     <thead>
         <tr>

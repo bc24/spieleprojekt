@@ -1,10 +1,3 @@
-<?php
-
-
-
-
-?>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +44,8 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#" id="fillData">Daten füllen</a></li>
+                <li><a href="#" id="ButtonTest">Button Test</a></li>
+                <li><a href="#" id="fillData">Daten füllen</a></li>
                 <li><a href="#" id="saveData">Daten speichern</a></li>
             </ul>
         </div>
@@ -61,10 +55,9 @@
 </nav>
 
 <style>
-
-  .spacer-header {
-    margin-top: 60px;
-  }
+    .spacer-header {
+        margin-top: 60px;
+    }
     /* Start des CSS für Header */
 
     .thumbnail {
@@ -169,78 +162,90 @@
         margin-left: -15%;
     }
 
-
     .form-group input[type="checkbox"] {
-    display: none;
-}
+        display: none;
+    }
 
-.form-group input[type="checkbox"] + .btn-group > label span {
-    width: 20px;
-}
+    .form-group input[type="checkbox"]+.btn-group>label span {
+        width: 20px;
+    }
 
-.form-group input[type="checkbox"] + .btn-group > label span:first-child {
-    display: none;
-}
-.form-group input[type="checkbox"] + .btn-group > label span:last-child {
-    display: inline-block;
-}
+    .form-group input[type="checkbox"]+.btn-group>label span:first-child {
+        display: none;
+    }
 
-.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
-    display: inline-block;
-}
-.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
-    display: none;
-}
+    .form-group input[type="checkbox"]+.btn-group>label span:last-child {
+        display: inline-block;
+    }
 
-.table1_game1 {
-  margin-top: 115%;
-}
-.table2_game2 {
-  margin-top: 30%;
-}
-.table3_game3 {
-  margin-top: 30%;
-}
-.table4_game4 {
-  margin-top: 30%;
-}
-.table5_game5 {
-  margin-top: 56%;
-}
-.table6_game6 {
-  margin-top: 30%;
-}
-.table7_game7 {
-  margin-top: 30%;
-}
-.table8_game8 {
-  margin-top: 30%;
-}
+    .form-group input[type="checkbox"]:checked+.btn-group>label span:first-child {
+        display: inline-block;
+    }
 
-.tw_game .form-group {
-  display: inline;
-}
+    .form-group input[type="checkbox"]:checked+.btn-group>label span:last-child {
+        display: none;
+    }
+
+    .table1_game1 {
+        margin-top: 115%;
+    }
+
+    .table2_game2 {
+        margin-top: 30%;
+    }
+
+    .table3_game3 {
+        margin-top: 30%;
+    }
+
+    .table4_game4 {
+        margin-top: 30%;
+    }
+
+    .table5_game5 {
+        margin-top: 56%;
+    }
+
+    .table6_game6 {
+        margin-top: 30%;
+    }
+
+    .table7_game7 {
+        margin-top: 30%;
+    }
+
+    .table8_game8 {
+        margin-top: 30%;
+    }
+
+    .tw_game .form-group {
+        display: inline;
+    }
+
+    .tw1 {
+        margin-top: 200px;
+    }
 </style>
 <!-- Start des Headers -->
 <div class="spacer-header">
-<div class="thumbnail">
-    <h1 class="text-center" id="header-top"><strong>Turnierbaum</strong></h1>
-    <div class="panel panel-default">
-        <div class="panel-body text-center" id="panel-header">
-            Hier findest du alle Informationen zu den aktuellen Spielen :) Die Seite aktualisiert sich aller 7 Sekunden automatisch.
+    <div class="thumbnail">
+        <h1 class="text-center" id="header-top"><strong>Turnierbaum</strong></h1>
+        <div class="panel panel-default">
+            <div class="panel-body text-center" id="panel-header">
+                Hier findest du alle Informationen zu den aktuellen Spielen :) Die Seite aktualisiert sich aller 7 Sekunden automatisch.
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Ende des Headers -->
-<!-- Start des Headers-Bomberman -->
-<div class="thumbnail thumbnail-bomberman">
-    <h1 class="text-center" id="header"><strong>Bomberman</strong></h1>
-    <!-- <div class="panel panel-default">
+    <!-- Ende des Headers -->
+    <!-- Start des Headers-Bomberman -->
+    <div class="thumbnail thumbnail-bomberman">
+        <h1 class="text-center" id="header"><strong>Bomberman</strong></h1>
+        <!-- <div class="panel panel-default">
 <div class="panel-body text-center" id="panel-header">
   Hier findest du alle Informationen zum Bomberman-Turnier :) Natürlich immer up-to-date
 </div> -->
-</div>
+    </div>
 </div>
 <!-- Ende des Headers-Bomberman -->
 <!-- Start des Headers-Vorrunde-Bomberman -->
@@ -958,9 +963,10 @@
 <!-- Ende des Spiel6-Teeworlds -->
 
 <div class="thumbnail thumbnail_admin">
-        <div class="table1_game1">
-            <h3>Spielkontrolle</h3><hr />
-            <div class="container">
+    <div class="table1_game1">
+        <h3>Spielkontrolle</h3>
+        <hr />
+        <div class="container">
             <div class="[ form-group ]">
                 <input type="checkbox" name="table1_game1-default" id="table1_game1-default" autocomplete="off" />
                 <div class="[ btn-group ]">
@@ -1009,730 +1015,856 @@
                     </label>
                 </div>
             </div>
-                <input type="text" class="form-control" id="completly_different">
+            <input type="text" class="form-control" id="completly_different">
         </div>
-                    </div>
-        <div class="table2_game2">
-            <h3>Spielkontrolle</h3><hr />
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table2_game2-default" id="table2_game2-default" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table2_game2-default" class="[ btn btn-default ]">
+    </div>
+    <div class="table2_game2">
+        <h3>Spielkontrolle</h3>
+        <hr />
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table2_game2-default" id="table2_game2-default" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table2_game2-default" class="[ btn btn-default ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table2_game2-default" class="[ btn btn-default active ]">
+                <label for="table2_game2-default" class="[ btn btn-default active ]">
                         Default
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table2_game2-success" id="table2_game2-success" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table2_game2-success" class="[ btn btn-success ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table2_game2-success" id="table2_game2-success" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table2_game2-success" class="[ btn btn-success ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table2_game2-success" class="[ btn btn-default active ]">
+                <label for="table2_game2-success" class="[ btn btn-default active ]">
                         Spiel gestartet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table2_game2-danger" id="table2_game2-danger" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table2_game2-danger" class="[ btn btn-danger ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table2_game2-danger" id="table2_game2-danger" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table2_game2-danger" class="[ btn btn-danger ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table2_game2-danger" class="[ btn btn-default active ]">
+                <label for="table2_game2-danger" class="[ btn btn-default active ]">
                         Spiel beendet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table2_game2-info" id="table2_game2-info" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table2_game2-info" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table2_game2-info" id="table2_game2-info" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table2_game2-info" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table2_game2-info" class="[ btn btn-default active ]">
+                <label for="table2_game2-info" class="[ btn btn-default active ]">
                         Information eingeblendet
                     </label>
-                </div>
             </div>
-                <input type="text" class="form-control" id="completly_different">
         </div>
-        <div class="table3_game3">
-            <h3>Spielkontrolle</h3><hr />
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table3_game3-default" id="table3_game3-default" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table3_game3-default" class="[ btn btn-default ]">
+        <input type="text" class="form-control" id="completly_different">
+    </div>
+    <div class="table3_game3">
+        <h3>Spielkontrolle</h3>
+        <hr />
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table3_game3-default" id="table3_game3-default" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table3_game3-default" class="[ btn btn-default ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table3_game3-default" class="[ btn btn-default active ]">
+                <label for="table3_game3-default" class="[ btn btn-default active ]">
                         Default
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table3_game3-success" id="table3_game3-success" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table3_game3-success" class="[ btn btn-success ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table3_game3-success" id="table3_game3-success" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table3_game3-success" class="[ btn btn-success ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table3_game3-success" class="[ btn btn-default active ]">
+                <label for="table3_game3-success" class="[ btn btn-default active ]">
                         Spiel gestartet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table3_game3-danger" id="table3_game3-danger" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table3_game3-danger" class="[ btn btn-danger ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table3_game3-danger" id="table3_game3-danger" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table3_game3-danger" class="[ btn btn-danger ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table3_game3-danger" class="[ btn btn-default active ]">
+                <label for="table3_game3-danger" class="[ btn btn-default active ]">
                         Spiel beendet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table3_game3-info" id="table3_game3-info" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table3_game3-info" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table3_game3-info" id="table3_game3-info" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table3_game3-info" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table3_game3-info" class="[ btn btn-default active ]">
+                <label for="table3_game3-info" class="[ btn btn-default active ]">
                         Information eingeblendet
                     </label>
-                </div>
             </div>
-                <input type="text" class="form-control" id="completly_different">
         </div>
-        <div class="table4_game4">
-            <h3>Spielkontrolle</h3><hr />
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table4_game4-default" id="table4_game4-default" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table4_game4-default" class="[ btn btn-default ]">
+        <input type="text" class="form-control" id="completly_different">
+    </div>
+    <div class="table4_game4">
+        <h3>Spielkontrolle</h3>
+        <hr />
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table4_game4-default" id="table4_game4-default" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table4_game4-default" class="[ btn btn-default ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table4_game4-default" class="[ btn btn-default active ]">
+                <label for="table4_game4-default" class="[ btn btn-default active ]">
                         Default
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table4_game4-success" id="table4_game4-success" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table4_game4-success" class="[ btn btn-success ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table4_game4-success" id="table4_game4-success" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table4_game4-success" class="[ btn btn-success ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table4_game4-success" class="[ btn btn-default active ]">
+                <label for="table4_game4-success" class="[ btn btn-default active ]">
                         Spiel gestartet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table4_game4-danger" id="table4_game4-danger" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table4_game4-danger" class="[ btn btn-danger ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table4_game4-danger" id="table4_game4-danger" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table4_game4-danger" class="[ btn btn-danger ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table4_game4-danger" class="[ btn btn-default active ]">
+                <label for="table4_game4-danger" class="[ btn btn-default active ]">
                         Spiel beendet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table4_game4-info" id="table4_game4-info" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table4_game4-info" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table4_game4-info" id="table4_game4-info" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table4_game4-info" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table4_game4-info" class="[ btn btn-default active ]">
+                <label for="table4_game4-info" class="[ btn btn-default active ]">
                         Information eingeblendet
                     </label>
-                </div>
             </div>
-                <input type="text" class="form-control" id="completly_different">
         </div>
-        <div class="table5_game5">
-            <h3>Spielkontrolle</h3><hr />
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table5_game5-default" id="table5_game5-default" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table5_game5-default" class="[ btn btn-default ]">
+        <input type="text" class="form-control" id="completly_different">
+    </div>
+    <div class="table5_game5">
+        <h3>Spielkontrolle</h3>
+        <hr />
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table5_game5-default" id="table5_game5-default" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table5_game5-default" class="[ btn btn-default ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table5_game5-default" class="[ btn btn-default active ]">
+                <label for="table5_game5-default" class="[ btn btn-default active ]">
                         Default
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table5_game5-success" id="table5_game5-success" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table5_game5-success" class="[ btn btn-success ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table5_game5-success" id="table5_game5-success" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table5_game5-success" class="[ btn btn-success ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table5_game5-success" class="[ btn btn-default active ]">
+                <label for="table5_game5-success" class="[ btn btn-default active ]">
                         Spiel gestartet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table5_game5-danger" id="table5_game5-danger" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table5_game5-danger" class="[ btn btn-danger ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table5_game5-danger" id="table5_game5-danger" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table5_game5-danger" class="[ btn btn-danger ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table5_game5-danger" class="[ btn btn-default active ]">
+                <label for="table5_game5-danger" class="[ btn btn-default active ]">
                         Spiel beendet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table5_game5-info" id="table5_game5-info" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table5_game5-info" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table5_game5-info" id="table5_game5-info" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table5_game5-info" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table5_game5-info" class="[ btn btn-default active ]">
+                <label for="table5_game5-info" class="[ btn btn-default active ]">
                         Information eingeblendet
                     </label>
-                </div>
             </div>
-                <input type="text" class="form-control" id="completly_different">
         </div>
-        <div class="table6_game6">
-            <h3>Spielkontrolle</h3><hr />
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table6_game6-default" id="table6_game6-default" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table6_game6-default" class="[ btn btn-default ]">
+        <input type="text" class="form-control" id="completly_different">
+    </div>
+    <div class="table6_game6">
+        <h3>Spielkontrolle</h3>
+        <hr />
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table6_game6-default" id="table6_game6-default" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table6_game6-default" class="[ btn btn-default ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table6_game6-default" class="[ btn btn-default active ]">
+                <label for="table6_game6-default" class="[ btn btn-default active ]">
                         Default
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table6_game6-success" id="table6_game6-success" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table6_game6-success" class="[ btn btn-success ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table6_game6-success" id="table6_game6-success" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table6_game6-success" class="[ btn btn-success ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table6_game6-success" class="[ btn btn-default active ]">
+                <label for="table6_game6-success" class="[ btn btn-default active ]">
                         Spiel gestartet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table6_game6-danger" id="table6_game6-danger" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table6_game6-danger" class="[ btn btn-danger ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table6_game6-danger" id="table6_game6-danger" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table6_game6-danger" class="[ btn btn-danger ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table6_game6-danger" class="[ btn btn-default active ]">
+                <label for="table6_game6-danger" class="[ btn btn-default active ]">
                         Spiel beendet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table6_game6-info" id="table6_game6-info" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table6_game6-info" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table6_game6-info" id="table6_game6-info" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table6_game6-info" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table6_game6-info" class="[ btn btn-default active ]">
+                <label for="table6_game6-info" class="[ btn btn-default active ]">
                         Information eingeblendet
                     </label>
-                </div>
             </div>
-                <input type="text" class="form-control" id="completly_different">
         </div>
-        <div class="table7_game7">
-            <h3>Spielkontrolle</h3><hr />
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table7_game7-default" id="table7_game7-default" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table7_game7-default" class="[ btn btn-default ]">
+        <input type="text" class="form-control" id="completly_different">
+    </div>
+    <div class="table7_game7">
+        <h3>Spielkontrolle</h3>
+        <hr />
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table7_game7-default" id="table7_game7-default" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table7_game7-default" class="[ btn btn-default ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table7_game7-default" class="[ btn btn-default active ]">
+                <label for="table7_game7-default" class="[ btn btn-default active ]">
                         Default
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table7_game7-success" id="table7_game7-success" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table7_game7-success" class="[ btn btn-success ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table7_game7-success" id="table7_game7-success" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table7_game7-success" class="[ btn btn-success ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table7_game7-success" class="[ btn btn-default active ]">
+                <label for="table7_game7-success" class="[ btn btn-default active ]">
                         Spiel gestartet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table7_game7-danger" id="table7_game7-danger" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table7_game7-danger" class="[ btn btn-danger ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table7_game7-danger" id="table7_game7-danger" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table7_game7-danger" class="[ btn btn-danger ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table7_game7-danger" class="[ btn btn-default active ]">
+                <label for="table7_game7-danger" class="[ btn btn-default active ]">
                         Spiel beendet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table7_game7-info" id="table7_game7-info" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table7_game7-info" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table7_game7-info" id="table7_game7-info" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table7_game7-info" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table7_game7-info" class="[ btn btn-default active ]">
+                <label for="table7_game7-info" class="[ btn btn-default active ]">
                         Information eingeblendet
                     </label>
-                </div>
             </div>
-                <input type="text" class="form-control" id="completly_different">
         </div>
-        <div class="table8_game8">
-            <h3>Spielkontrolle</h3><hr />
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-default" id="table8_game8-default" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-default" class="[ btn btn-default ]">
+        <input type="text" class="form-control" id="completly_different">
+    </div>
+    <div class="table8_game8">
+        <h3>Spielkontrolle</h3>
+        <hr />
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table8_game8-default" id="table8_game8-default" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table8_game8-default" class="[ btn btn-default ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-default" class="[ btn btn-default active ]">
+                <label for="table8_game8-default" class="[ btn btn-default active ]">
                         Default
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-success" id="table8_game8-success" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-success" class="[ btn btn-success ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table8_game8-success" id="table8_game8-success" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table8_game8-success" class="[ btn btn-success ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-success" class="[ btn btn-default active ]">
+                <label for="table8_game8-success" class="[ btn btn-default active ]">
                         Spiel gestartet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-danger" id="table8_game8-danger" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-danger" class="[ btn btn-danger ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table8_game8-danger" id="table8_game8-danger" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table8_game8-danger" class="[ btn btn-danger ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-danger" class="[ btn btn-default active ]">
+                <label for="table8_game8-danger" class="[ btn btn-default active ]">
                         Spiel beendet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-info" id="table8_game8-info" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-info" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="table8_game8-info" id="table8_game8-info" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="table8_game8-info" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-info" class="[ btn btn-default active ]">
+                <label for="table8_game8-info" class="[ btn btn-default active ]">
                         Information eingeblendet
                     </label>
-                </div>
             </div>
-                <input type="text" class="form-control" id="completly_different">
         </div>
-        <div class="tw_game">
-            <h3>Spielkontrolle</h3><hr />
-            <div class="[ form-group ]">
-                <input type="checkbox" name="tw1_game1-default" id="tw1_game1-default" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="tw1_game1-default" class="[ btn btn-default ]">
+        <input type="text" class="form-control" id="completly_different">
+    </div>
+    <div class="tw_game tw1">
+        <h3>Spielkontrolle</h3>
+        <hr />
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw1_game1-default" id="tw1_game1-default" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw1_game1-default" class="[ btn btn-default ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="tw1_game1-default" class="[ btn btn-default active ]">
+                <label for="tw1_game1-default" class="[ btn btn-default active ]">
                         Default
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="tw1_game1-success" id="tw1_game1-success" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="tw1_game1-success" class="[ btn btn-success ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw1_game1-success" id="tw1_game1-success" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw1_game1-success" class="[ btn btn-success ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="tw1_game1-success" class="[ btn btn-default active ]">
+                <label for="tw1_game1-success" class="[ btn btn-default active ]">
                         Spiel gestartet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="tw1_game1-danger" id="tw1_game1-danger" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="tw1_game1-danger" class="[ btn btn-danger ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw1_game1-danger" id="tw1_game1-danger" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw1_game1-danger" class="[ btn btn-danger ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="tw1_game1-danger" class="[ btn btn-default active ]">
+                <label for="tw1_game1-danger" class="[ btn btn-default active ]">
                         Spiel beendet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="tw1_game1-info" id="tw1_game1-info" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="tw1_game1-info" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw1_game1-info" id="tw1_game1-info" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw1_game1-info" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="tw1_game1-info" class="[ btn btn-default active ]">
+                <label for="tw1_game1-info" class="[ btn btn-default active ]">
                         Information eingeblendet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="tw1_game1-winLeft" id="tw1_game1-winLeft" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="tw1_game1-winLeft" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw1_game1-winLeft" id="tw1_game1-winLeft" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw1_game1-winLeft" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="tw1_game1-winLeft" class="[ btn btn-default active ]">
+                <label for="tw1_game1-winLeft" class="[ btn btn-default active ]">
                         Win Links
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="tw1_game1-winRight" id="tw1_game1-winRight" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="tw1_game1-winRight" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw1_game1-winRight" id="tw1_game1-winRight" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw1_game1-winRight" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="tw1_game1-winRight" class="[ btn btn-default active ]">
+                <label for="tw1_game1-winRight" class="[ btn btn-default active ]">
                         Win Rechts
                     </label>
-                </div>
             </div>
-                <input type="text" class="form-control" id="completly_different">
         </div>
-        <div class="tw_game">
-            <h3>Spielkontrolle</h3><hr />
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-default" id="table8_game8-default" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-default" class="[ btn btn-default ]">
+        <input type="text" class="form-control" id="completly_different">
+    </div>
+    <div class="tw_game">
+        <h3>Spielkontrolle</h3>
+        <hr />
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw2_game2-default" id="tw2_game2-default" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw2_game2-default" class="[ btn btn-default ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-default" class="[ btn btn-default active ]">
+                <label for="tw2_game2-default" class="[ btn btn-default active ]">
                         Default
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-success" id="table8_game8-success" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-success" class="[ btn btn-success ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw2_game2-success" id="tw2_game2-success" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw2_game2-success" class="[ btn btn-success ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-success" class="[ btn btn-default active ]">
+                <label for="tw2_game2-success" class="[ btn btn-default active ]">
                         Spiel gestartet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-danger" id="table8_game8-danger" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-danger" class="[ btn btn-danger ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw2_game2-danger" id="tw2_game2-danger" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw2_game2-danger" class="[ btn btn-danger ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-danger" class="[ btn btn-default active ]">
+                <label for="tw2_game2-danger" class="[ btn btn-default active ]">
                         Spiel beendet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-info" id="table8_game8-info" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-info" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw2_game2-info" id="tw2_game2-info" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw2_game2-info" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-info" class="[ btn btn-default active ]">
+                <label for="tw2_game2-info" class="[ btn btn-default active ]">
                         Information eingeblendet
                     </label>
-                </div>
             </div>
-                <input type="text" class="form-control" id="completly_different">
         </div>
-        <div class="tw_game">
-            <h3>Spielkontrolle</h3><hr />
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-default" id="table8_game8-default" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-default" class="[ btn btn-default ]">
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw2_game2-winLeft" id="tw2_game2-winLeft" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw2_game2-winLeft" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-default" class="[ btn btn-default active ]">
+                <label for="tw2_game2-winLeft" class="[ btn btn-default active ]">
+                        Win Links
+                    </label>
+            </div>
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw2_game2-winRight" id="tw2_game2-winRight" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw2_game2-winRight" class="[ btn btn-info ]">
+                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                        <span> </span>
+                    </label>
+                <label for="tw2_game2-winRight" class="[ btn btn-default active ]">
+                        Win Rechts
+                    </label>
+            </div>
+        </div>
+        <input type="text" class="form-control" id="completly_different">
+    </div>
+    <div class="tw_game">
+        <h3>Spielkontrolle</h3>
+        <hr />
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw3_game3-default" id="tw3_game3-default" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw3_game3-default" class="[ btn btn-default ]">
+                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                        <span> </span>
+                    </label>
+                <label for="tw3_game3-default" class="[ btn btn-default active ]">
                         Default
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-success" id="table8_game8-success" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-success" class="[ btn btn-success ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw3_game3-success" id="tw3_game3-success" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw3_game3-success" class="[ btn btn-success ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-success" class="[ btn btn-default active ]">
+                <label for="tw3_game3-success" class="[ btn btn-default active ]">
                         Spiel gestartet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-danger" id="table8_game8-danger" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-danger" class="[ btn btn-danger ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw3_game3-danger" id="tw3_game3-danger" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw3_game3-danger" class="[ btn btn-danger ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-danger" class="[ btn btn-default active ]">
+                <label for="tw3_game3-danger" class="[ btn btn-default active ]">
                         Spiel beendet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-info" id="table8_game8-info" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-info" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw3_game3-info" id="tw3_game3-info" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw3_game3-info" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-info" class="[ btn btn-default active ]">
+                <label for="tw3_game3-info" class="[ btn btn-default active ]">
                         Information eingeblendet
                     </label>
-                </div>
             </div>
-                <input type="text" class="form-control" id="completly_different">
         </div>
-        <div class="tw_game">
-            <h3>Spielkontrolle</h3><hr />
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-default" id="table8_game8-default" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-default" class="[ btn btn-default ]">
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw3_game3-winLeft" id="tw3_game3-winLeft" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw3_game3-winLeft" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-default" class="[ btn btn-default active ]">
+                <label for="tw3_game3-winLeft" class="[ btn btn-default active ]">
+                        Win Links
+                    </label>
+            </div>
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw3_game3-winRight" id="tw3_game3-winRight" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw3_game3-winRight" class="[ btn btn-info ]">
+                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                        <span> </span>
+                    </label>
+                <label for="tw3_game3-winRight" class="[ btn btn-default active ]">
+                        Win Rechts
+                    </label>
+            </div>
+        </div>
+        <input type="text" class="form-control" id="completly_different">
+    </div>
+    <div class="tw_game">
+        <h3>Spielkontrolle</h3>
+        <hr />
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw4_game4-default" id="tw4_game4-default" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw4_game4-default" class="[ btn btn-default ]">
+                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                        <span> </span>
+                    </label>
+                <label for="tw4_game4-default" class="[ btn btn-default active ]">
                         Default
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-success" id="table8_game8-success" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-success" class="[ btn btn-success ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw4_game4-success" id="tw4_game4-success" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw4_game4-success" class="[ btn btn-success ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-success" class="[ btn btn-default active ]">
+                <label for="tw4_game4-success" class="[ btn btn-default active ]">
                         Spiel gestartet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-danger" id="table8_game8-danger" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-danger" class="[ btn btn-danger ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw4_game4-danger" id="tw4_game4-danger" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw4_game4-danger" class="[ btn btn-danger ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-danger" class="[ btn btn-default active ]">
+                <label for="tw4_game4-danger" class="[ btn btn-default active ]">
                         Spiel beendet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-info" id="table8_game8-info" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-info" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw4_game4-info" id="tw4_game4-info" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw4_game4-info" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-info" class="[ btn btn-default active ]">
+                <label for="tw4_game4-info" class="[ btn btn-default active ]">
                         Information eingeblendet
                     </label>
-                </div>
             </div>
-                <input type="text" class="form-control" id="completly_different">
         </div>
-        <div class="tw_game">
-            <h3>Spielkontrolle</h3><hr />
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-default" id="table8_game8-default" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-default" class="[ btn btn-default ]">
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw4_game4-winLeft" id="tw4_game4-winLeft" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw4_game4-winLeft" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-default" class="[ btn btn-default active ]">
+                <label for="tw4_game4-winLeft" class="[ btn btn-default active ]">
+                        Win Links
+                    </label>
+            </div>
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw4_game4-winRight" id="tw4_game4-winRight" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw2_game2-winRight" class="[ btn btn-info ]">
+                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                        <span> </span>
+                    </label>
+                <label for="tw4_game4-winRight" class="[ btn btn-default active ]">
+                        Win Rechts
+                    </label>
+            </div>
+        </div>
+        <input type="text" class="form-control" id="completly_different">
+    </div>
+    <div class="tw_game">
+        <h3>Spielkontrolle</h3>
+        <hr />
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw5_game5-default" id="tw5_game5-default" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw5_game5-default" class="[ btn btn-default ]">
+                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                        <span> </span>
+                    </label>
+                <label for="tw5_game5-default" class="[ btn btn-default active ]">
                         Default
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-success" id="table8_game8-success" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-success" class="[ btn btn-success ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw5_game5-success" id="tw5_game5-success" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw5_game5-success" class="[ btn btn-success ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-success" class="[ btn btn-default active ]">
+                <label for="tw5_game5-success" class="[ btn btn-default active ]">
                         Spiel gestartet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-danger" id="table8_game8-danger" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-danger" class="[ btn btn-danger ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw5_game5-danger" id="tw5_game5-danger" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw5_game5-danger" class="[ btn btn-danger ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-danger" class="[ btn btn-default active ]">
+                <label for="tw5_game5-danger" class="[ btn btn-default active ]">
                         Spiel beendet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-info" id="table8_game8-info" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-info" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw5_game5-info" id="tw5_game5-info" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw5_game5-info" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-info" class="[ btn btn-default active ]">
+                <label for="tw5_game5-info" class="[ btn btn-default active ]">
                         Information eingeblendet
                     </label>
-                </div>
             </div>
-                <input type="text" class="form-control" id="completly_different">
         </div>
-        <div class="tw_game">
-            <h3>Spielkontrolle</h3><hr />
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-default" id="table8_game8-default" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-default" class="[ btn btn-default ]">
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw5_game5-winLeft" id="tw5_game5-winLeft" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw5_game5-winLeft" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-default" class="[ btn btn-default active ]">
+                <label for="tw5_game5-winLeft" class="[ btn btn-default active ]">
+                        Win Links
+                    </label>
+            </div>
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw5_game5-winRight" id="tw5_game5-winRight" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw5_game5-winRight" class="[ btn btn-info ]">
+                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                        <span> </span>
+                    </label>
+                <label for="tw5_game5-winRight" class="[ btn btn-default active ]">
+                        Win Rechts
+                    </label>
+            </div>
+        </div>
+        <input type="text" class="form-control" id="completly_different">
+    </div>
+    <div class="tw_game">
+        <h3>Spielkontrolle</h3>
+        <hr />
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw6_game6-default" id="tw6_game6-default" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw6_game6-default" class="[ btn btn-default ]">
+                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                        <span> </span>
+                    </label>
+                <label for="tw6_game6-default" class="[ btn btn-default active ]">
                         Default
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-success" id="table8_game8-success" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-success" class="[ btn btn-success ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw6_game6-success" id="tw6_game6-success" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw6_game6-success" class="[ btn btn-success ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-success" class="[ btn btn-default active ]">
+                <label for="tw6_game6-success" class="[ btn btn-default active ]">
                         Spiel gestartet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-danger" id="table8_game8-danger" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-danger" class="[ btn btn-danger ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw6_game6-danger" id="tw6_game6-danger" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw6_game6-danger" class="[ btn btn-danger ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-danger" class="[ btn btn-default active ]">
+                <label for="tw6_game6-danger" class="[ btn btn-default active ]">
                         Spiel beendet
                     </label>
-                </div>
             </div>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="table8_game8-info" id="table8_game8-info" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="table8_game8-info" class="[ btn btn-info ]">
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw6_game6-info" id="tw6_game6-info" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw6_game6-info" class="[ btn btn-info ]">
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                    <label for="table8_game8-info" class="[ btn btn-default active ]">
+                <label for="tw6_game6-info" class="[ btn btn-default active ]">
                         Information eingeblendet
                     </label>
-                </div>
             </div>
-                <input type="text" class="form-control" id="completly_different">
         </div>
-
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw6_game6-winLeft" id="tw6_game6-winLeft" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw6_game6-winLeft" class="[ btn btn-info ]">
+                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                        <span> </span>
+                    </label>
+                <label for="tw6_game6-winLeft" class="[ btn btn-default active ]">
+                        Win Links
+                    </label>
+            </div>
+        </div>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="tw6_game6-winRight" id="tw6_game6-winRight" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="tw6_game6-winRight" class="[ btn btn-info ]">
+                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                        <span> </span>
+                    </label>
+                <label for="tw6_game6-winRight" class="[ btn btn-default ]">
+                        Win Rechts
+                    </label>
+            </div>
+        </div>
+        <input type="text" class="form-control" id="completly_different">
+    </div>
 </div>
-
-</div>
-    <script>
-
-    $('#fillData').click(function(){
-      fillValues();
+<script>
+    $('#fillData').click(function() {
+        fillValues();
     });
 
     function fillValues() {
-      var value = 1;
-      var fields= $(".form-control");
-      fields.each(function (i) {
-        $(this).val(value++);
-      });
-   }
+        var value = 1;
+        var fields = $(".form-control");
+        fields.each(function(i) {
+            $(this).val(value++);
+        });
+    }
 
-    </script>
-
-<script>
     $('#saveData').click(function() {
         var bomberman_table1 = [$('#bomberman_table1_playerOne').val(),
             $('#bomberman_table1_playerTwo').val(),
@@ -1980,6 +2112,10 @@
         var tw_fourthgame = [$('#tw_fourth_teamLeft').val(), $('#tw_fourth_teamRight').val()];
         var tw_fifthgame = [$('#tw_fifth_teamLeft').val(), $('#tw_fifth_teamRight').val()];
         var tw_sixthgame = [$('#tw_sixth_teamLeft').val(), $('#tw_sixth_teamRight').val()];
+        var bomberman_table1_button = [$('#table1_game1-default').prop('checked'),
+        $('#table1_game1-success').prop('checked'),
+        $('#table1_game1-danger').prop('checked'),
+        $('#table1_game1-info').prop('checked')];
         $.post("admin-turnierbaum-update.php", {
             bomberman_table1: bomberman_table1,
             bomberman_table2: bomberman_table2,
@@ -1994,7 +2130,8 @@
             tw_thirdgame: tw_thirdgame,
             tw_fourthgame: tw_fourthgame,
             tw_fifthgame: tw_fifthgame,
-            tw_sixthgame: tw_sixthgame
+            tw_sixthgame: tw_sixthgame,
+            bomberman_table1_button: bomberman_table1_button
 
         });
         return false;
