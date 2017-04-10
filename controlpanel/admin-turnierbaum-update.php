@@ -15,21 +15,84 @@ $tw_fourthgame = $_POST['tw_fourthgame'];
 $tw_fifthgame = $_POST['tw_fifthgame'];
 $tw_sixthgame = $_POST['tw_sixthgame'];
 $bomberman_table1_button = $_POST['bomberman_table1_button'];
-$test = 'inactive';
-if ($bomberman_table1_button[0] == 'true')
+$bomberman_table2_button = $_POST['bomberman_table2_button'];
+$bomberman_table3_button = $_POST['bomberman_table3_button'];
+$bomberman_table4_button = $_POST['bomberman_table4_button'];
+$bomberman_table5_button = $_POST['bomberman_table5_button'];
+$bomberman_table6_button = $_POST['bomberman_table6_button'];
+$bomberman_table7_button = $_POST['bomberman_table7_button'];
+$bomberman_table8_button = $_POST['bomberman_table8_button'];
+
+$bb_table = array("inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game");
+if ($bomberman_table1_button[1] == 'true')
 {
-  global $test;
-  $test = "active-game";
+  $bb_table[0] = "active-game";
 }
-else {
-  global $test;
-  $test = "kacken";
+if ($bomberman_table1_button[2] == 'true')
+{
+  $bb_table[0] = "closed-game";
+}
+if ($bomberman_table2_button[1] == 'true')
+{
+  $bb_table[1] = "active-game";
+}
+if ($bomberman_table2_button[2] == 'true')
+{
+  $bb_table[1] = "closed-game";
+}
+if ($bomberman_table3_button[1] == 'true')
+{
+  $bb_table[2] = "active-game";
+}
+if ($bomberman_table3_button[2] == 'true')
+{
+  $bb_table[2] = "closed-game";
+}
+if ($bomberman_table4_button[1] == 'true')
+{
+  $bb_table[3] = "active-game";
+}
+if ($bomberman_table4_button[2] == 'true')
+{
+  $bb_table[3] = "closed-game";
+}
+if ($bomberman_table5_button[1] == 'true')
+{
+  $bb_table[4] = "active-game";
+}
+if ($bomberman_table5_button[2] == 'true')
+{
+  $bb_table[4] = "closed-game";
+}
+if ($bomberman_table6_button[1] == 'true')
+{
+  $bb_table[5] = "active-game";
+}
+if ($bomberman_table6_button[2] == 'true')
+{
+  $bb_table[5] = "closed-game";
+}
+if ($bomberman_table7_button[1] == 'true')
+{
+  $bb_table[6] = "active-game";
+}
+if ($bomberman_table7_button[2] == 'true')
+{
+  $bb_table[6] = "closed-game";
+}
+if ($bomberman_table8_button[1] == 'true')
+{
+  $bb_table[7] = "active-game";
+}
+if ($bomberman_table8_button[2] == 'true')
+{
+  $bb_table[7] = "closed-game";
 }
 file_put_contents('../turnierbaum/turnierbaum-test.html',
 "
 <!-- Start des Headers -->
 <div class='thumbnail'>
-    <h1 class='text-center' id='header-top'><strong>Turnierbaum</strong></h1>
+    <h1 class='text-center' id='header-top'><strong>Turnierbaum $bb_table[1]</strong></h1>
     <div class='panel panel-default'>
         <div class='panel-body text-center' id='panel-header'>
             Hier findest du alle Informationen zu den aktuellen Spielen :) Die Seite aktualisiert sich aller 7 Sekunden automatisch.
@@ -39,7 +102,7 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 <!-- Ende des Headers -->
 <!-- Start des Headers-Bomberman -->
 <div class='thumbnail thumbnail-bomberman'>
-    <h1 class='text-center' id='header'><strong>Bomberman</strong></h1>
+    <h1 class='text-center' id='header'><strong>Bomberman $bb_table[0]</strong></h1>
     <!-- <div class='panel panel-default'>
 <div class='panel-body text-center' id='panel-header'>
   Hier findest du alle Informationen zum Bomberman-Turnier :) Natürlich immer up-to-date
@@ -53,8 +116,8 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 </div>
 <!-- Ende des Headers-Vorrunde-Bomberman -->
 <!-- Start des Table-Raum1-Bomberman -->
-<div class='thumbnail $test'>
-    <table class='table table-bordered'>
+<div class='thumbnail'>
+    <table class='table table-bordered $bb_table[0]'>
         <thead>
             <tr>
                 <th>Raum 1</th>
@@ -114,8 +177,8 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 </div>
 <!-- Ende des Table-Raum1-Bomberman -->
 <!-- Start des Table-Raum2-Bomberman -->
-<div class='thumbnail $test'>
-<table class='table table-bordered'>
+<div class='thumbnail'>
+<table class='table table-bordered $bb_table[1]'>
     <thead>
         <tr>
             <th>Raum 1</th>
@@ -176,7 +239,7 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 <!-- Ende des Table-Raum2-Bomberman -->
 <!-- Start des Table-Raum3-Bomberman -->
 <div class='thumbnail'>
-<table class='table table-bordered'>
+<table class='table table-bordered $bb_table[2]'>
     <thead>
         <tr>
             <th>Raum 1</th>
@@ -237,7 +300,7 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 <!-- Ende des Table-Raum3-Bomberman -->
 <!-- Start des Table-Raum4-Bomberman -->
 <div class='thumbnail'>
-<table class='table table-bordered'>
+<table class='table table-bordered $bb_table[3]'>
     <thead>
         <tr>
             <th>Raum 1</th>
@@ -303,7 +366,7 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 <!-- Ende des Headers-Finalrunde-Bomberman -->
 <!-- Start des Table-Raum1-Bomberman -->
 <div class='thumbnail'>
-<table class='table table-bordered'>
+<table class='table table-bordered $bb_table[4]'>
     <thead>
         <tr>
             <th>Raum 1</th>
@@ -364,7 +427,7 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 <!-- Ende des Table-Raum1-Bomberman -->
 <!-- Start des Table-Raum2-Bomberman -->
 <div class='thumbnail'>
-<table class='table table-bordered'>
+<table class='table table-bordered $bb_table[5]'>
     <thead>
         <tr>
             <th>Raum 1</th>
@@ -425,7 +488,7 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 <!-- Ende des Table-Raum2-Bomberman -->
 <!-- Start des Table-Raum3-Bomberman -->
 <div class='thumbnail'>
-<table class='table table-bordered'>
+<table class='table table-bordered $bb_table[6]'>
     <thead>
         <tr>
             <th>Raum 1</th>
@@ -486,7 +549,7 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 <!-- Ende des Table-Raum3-Bomberman -->
 <!-- Start des Table-Raum4-Bomberman -->
 <div class='thumbnail'>
-<table class='table table-bordered'>
+<table class='table table-bordered $bb_table[7]'>
     <thead>
         <tr>
             <th>Raum 1</th>

@@ -1857,6 +1857,12 @@
         fillValues();
     });
 
+    $('#ButtonTest').click(function() {
+        var test = $('#table2_game2-default').prop('checked');
+        alert(test);
+    });
+
+
     function fillValues() {
         var value = 1;
         var fields = $(".form-control");
@@ -2116,6 +2122,35 @@
         $('#table1_game1-success').prop('checked'),
         $('#table1_game1-danger').prop('checked'),
         $('#table1_game1-info').prop('checked')];
+        var bomberman_table2_button = [$('#table2_game2-default').prop('checked'),
+        $('#table2_game2-success').prop('checked'),
+        $('#table2_game2-danger').prop('checked'),
+        $('#table2_game2-info').prop('checked')];
+        var bomberman_table3_button = [$('#table3_game3-default').prop('checked'),
+        $('#table3_game3-success').prop('checked'),
+        $('#table3_game3-danger').prop('checked'),
+        $('#table3_game3-info').prop('checked')];
+        var bomberman_table4_button = [$('#table4_game4-default').prop('checked'),
+        $('#table4_game4-success').prop('checked'),
+        $('#table4_game4-danger').prop('checked'),
+        $('#table4_game4-info').prop('checked')];
+        var bomberman_table5_button = [$('#table5_game5-default').prop('checked'),
+        $('#table5_game5-success').prop('checked'),
+        $('#table5_game5-danger').prop('checked'),
+        $('#table5_game5-info').prop('checked')];
+        var bomberman_table6_button = [$('#table6_game6-default').prop('checked'),
+        $('#table6_game6-success').prop('checked'),
+        $('#table6_game6-danger').prop('checked'),
+        $('#table6_game6-info').prop('checked')];
+        var bomberman_table7_button = [$('#table7_game7-default').prop('checked'),
+        $('#table7_game7-success').prop('checked'),
+        $('#table7_game7-danger').prop('checked'),
+        $('#table7_game7-info').prop('checked')];
+        var bomberman_table8_button = [$('#table8_game8-default').prop('checked'),
+        $('#table8_game8-success').prop('checked'),
+        $('#table8_game8-danger').prop('checked'),
+        $('#table8_game8-info').prop('checked')];
+
         $.post("admin-turnierbaum-update.php", {
             bomberman_table1: bomberman_table1,
             bomberman_table2: bomberman_table2,
@@ -2131,7 +2166,14 @@
             tw_fourthgame: tw_fourthgame,
             tw_fifthgame: tw_fifthgame,
             tw_sixthgame: tw_sixthgame,
-            bomberman_table1_button: bomberman_table1_button
+            bomberman_table1_button: bomberman_table1_button,
+            bomberman_table2_button: bomberman_table2_button,
+            bomberman_table3_button: bomberman_table3_button,
+            bomberman_table4_button: bomberman_table4_button,
+            bomberman_table5_button: bomberman_table5_button,
+            bomberman_table6_button: bomberman_table6_button,
+            bomberman_table7_button: bomberman_table7_button,
+            bomberman_table8_button: bomberman_table8_button
 
         });
         return false;
