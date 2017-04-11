@@ -5,27 +5,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akzeptanzanalyse</title>
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="scripts\bootstrap-3.3.7\dist\css\bootstrap.min.css"> -->
-
-    <!-- Optional theme -->
-    <!-- <link rel="stylesheet" href="scripts\bootstrap-3.3.7\dist\css\bootstrap-theme.min.css"> -->
 
     <!-- jquery script -->
     <script src="scripts\jquery-3.2.0.min.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <script src="scripts\bootstrap-3.3.7\dist\js\bootstrap.min.js"></script> -->
+    <!-- jquery UI script -->
+    <!-- <script src="scripts\jquery-ui-1.12.1.custom\jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="scripts\jquery-ui-1.12.1.custom\jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="scripts\jquery-ui-1.12.1.custom\jquery-ui.structure.css"> -->
 
     <!-- Stylesheet standard.css -->
     <link rel="stylesheet" type="text/css" href="stylesheets/rangestyle.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/akzeptanz.css" />
 
+    <!-- Eignene scripts -->
+
+
 </head>
 
 <body onload="schließenderfragen()">
 
+  <span id="ladescreen">
+    <!-- Beim öffnen der Seite erscheinen der Fragen -->
+  </span>
+
   <form method="post">
+    <div>
+      <!-- Bei absenden aufploppen mit Text das es abgesendet wurde -->
+    <div>
     <div class="block" id="blockheadline">
       <p id="headline"> Akzeptanzanalye </p>
     </div>
@@ -211,6 +217,7 @@
 
 </body>
 <!-- Nicht an den Anfang da sonst nciht ausgefürht wird -->
+<script src="akzeptanz\varakzeptanz.js"></script>
 <script src="akzeptanz\schliessenfragen.js"></script>
 <script src="akzeptanz\akzeptanz.js?t=< ?= time(); ?"></script>
 <script src="akzeptanz\animationFragen.js?t=< ?= time(); ?"></script>

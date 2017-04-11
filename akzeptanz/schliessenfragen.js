@@ -1,4 +1,6 @@
 function schließenderfragen(){
+  $("#ladescreen").animate({opacity:"toggle"}, 500, function() {});
+
   /*Frage1*/
   $("#sliderbox1").animate({opacity: "toggle"}, 0, function() {});
   $("#sliderbox2").animate({opacity: "toggle"}, 0, function() {});
