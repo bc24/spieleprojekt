@@ -1,8 +1,27 @@
-body {
+.container {
   margin-top: 15%;
   text-align: center;
 }
 .glyphicon {
     font-size: 250px;
     margin-top: 20px;
+}
+.brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+#teamliste {
+    opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+#hoverTeamliste:hover + #teamliste {
+    opacity: 1.0;
 }
