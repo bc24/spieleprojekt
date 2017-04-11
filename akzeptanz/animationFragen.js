@@ -164,7 +164,7 @@ $("#pfeil12").click(function(){
     frage12offen = false;
   }
   else{
-    $("#blockende").animate({height:"210px"}, 1000, function() {});
+    $("#blockende").animate({height:"300px"}, 1000, function() {});
     frage12offen = true;
   }
 });

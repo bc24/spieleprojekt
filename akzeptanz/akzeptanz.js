@@ -93,10 +93,3 @@ $("#frage12Bomberman").change(function(){
 $("#frage12Teeworld").change(function(){
   $("#wertFrage12Teeworld").html( $('#frage12Teeworld').val())
 });
-
-
-$("#verbesserung").click( function() {
-    if($("#verbesserung").val() == "Bitte Verbesserungen eintragen "){
-      $("#verbesserung").val("");
-    }
-});
