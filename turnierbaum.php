@@ -23,8 +23,20 @@
 <?php
 session_start();
 ?>
+<style>
+  .container {
+    margin-top: 60px;
+  }
+  #toShow {
+    margin-top: 60px;
+    width: 1800px;
+    position:absolute;
+     z-index:1000;
+     background-color: white;
+  }
+</style>
 <body>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -42,7 +54,7 @@ session_start();
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Turnierbaum <span class="sr-only">(current)</span></a></li>
           <li><a href="./akzeptanz.php">Akzeptanzanalyse</a></li>
-          <li id="spielerliste"><a href="#">Spielerliste</a></li>
+          <li id="spielerliste">Spielerliste</li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Name: <?php echo $_SESSION['username']; ?></a></li>
@@ -53,7 +65,11 @@ session_start();
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-
+  <div class="thumbnail">
+    <div id="toShow" style="position: absolute">
+    <?php include('turnierbaum/spielerliste.php'); ?>
+  </div>
+  </div>
     <div class="container">
         <div class="row">
             <div class="col-xs-6 col-md-12">
@@ -66,6 +82,17 @@ session_start();
 
 
 <script>
+
+$(window).scroll(function() {
+    $('#toShow').css('top', $(this).scrollTop() + "px");
+});
+
+$('#spielerliste').click(function() {
+  $('#toShow').toggle('slow', function() {
+    // Animation complete.
+  });
+});
+
 
 $(document).ready(function(){
   loadTurnierbaum();
