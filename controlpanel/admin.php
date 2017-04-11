@@ -37,8 +37,8 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Akzeptanzanalyse <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">starten</a></li>
-                        <li><a href="#">beenden</a></li>
+                        <li><a href="#" id="akzeptanz-starten">starten</a></li>
+                        <li><a href="#" id="akzeptanz-beenden">beenden</a></li>
                         <li><a href="#">löschen</a></li>
                     </ul>
                 </li>
@@ -69,7 +69,7 @@
         width: 430px;
         height: 500%;
         margin-left: 70%;
-        margin-top: -318%;
+        margin-top: -275%;
         padding-bottom: 12%;
         padding-top: -1000px;
     }
@@ -223,7 +223,7 @@
     }
 
     .tw1 {
-        margin-top: 200px;
+        margin-top: 130px;
     }
 </style>
 <!-- Start des Headers -->
@@ -1862,6 +1862,16 @@
         alert(test);
     });
 
+    $('#akzeptanz-starten').click(function() {
+        var start = "starten";
+        $.post("admin-akzeptanz-control.php",{ start: start});
+    });
+
+    $('#akzeptanz-beenden').click(function() {
+        var beenden = "beenden";
+        alert("test");
+        $.post("admin-akzeptanz-control.php", {beenden: beenden});
+    });
 
     function fillValues() {
         var value = 1;
