@@ -92,7 +92,7 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 "
 <!-- Start des Headers -->
 <div class='thumbnail'>
-    <h1 class='text-center' id='header-top'><strong>Turnierbaum $bb_table[1]</strong></h1>
+    <h1 class='text-center' id='header-top'><strong>Turnierbaum</strong></h1>
     <div class='panel panel-default'>
         <div class='panel-body text-center' id='panel-header'>
             Hier findest du alle Informationen zu den aktuellen Spielen :) Die Seite aktualisiert sich aller 7 Sekunden automatisch.
@@ -102,7 +102,7 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 <!-- Ende des Headers -->
 <!-- Start des Headers-Bomberman -->
 <div class='thumbnail thumbnail-bomberman'>
-    <h1 class='text-center' id='header'><strong>Bomberman $bb_table[0]</strong></h1>
+    <h1 class='text-center' id='header'><strong>Bomberman</strong></h1>
     <!-- <div class='panel panel-default'>
 <div class='panel-body text-center' id='panel-header'>
   Hier findest du alle Informationen zum Bomberman-Turnier :) Natürlich immer up-to-date

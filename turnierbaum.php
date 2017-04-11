@@ -42,6 +42,7 @@ session_start();
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Turnierbaum <span class="sr-only">(current)</span></a></li>
           <li><a href="./akzeptanz.php">Akzeptanzanalyse</a></li>
+          <li id="spielerliste"><a href="#">Spielerliste</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Name: <?php echo $_SESSION['username']; ?></a></li>

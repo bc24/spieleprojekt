@@ -254,7 +254,7 @@
 </div>
 <!-- Ende des Headers-Vorrunde-Bomberman -->
 <!-- Start des Table-Raum1-Bomberman -->
-<div class="thumbnail active-game">
+<div class="thumbnail">
     <table class="table table-bordered">
         <thead>
             <tr>

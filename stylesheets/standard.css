@@ -14,7 +14,7 @@
     text-align: center;
     margin:0 auto;
 }
-#teamliste {
+/*#teamliste {
     opacity: 0.0;
     -webkit-transition: all 500ms ease-in-out;
     -moz-transition: all 500ms ease-in-out;
@@ -24,4 +24,4 @@
 }
 #hoverTeamliste:hover + #teamliste {
     opacity: 1.0;
-}
+}*/

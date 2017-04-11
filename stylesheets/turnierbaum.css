@@ -71,3 +71,8 @@
   border-color: red;
   border-width: 5px;
 }
+#spielerliste {
+  font-size: 30px;
+  margin-left: 165%;
+  margin-top: -12%;
+}

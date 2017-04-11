@@ -47,10 +47,9 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class=""><a href="turnierbaum.php">Turnierbaum <span class="sr-only">(current)</span></a></li>
+          <li class=""><a href="turnierbaum.php">Turnierbaum</a></li>
           <li><a href="akzeptanz.php">Akzeptanzanalyse</a></li>
         </ul>
-        <a class="navbar-brand brand" id="hoverTeamliste">Teamliste</a>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Name: <?php echo $_SESSION['username']; ?></a></li>
           <li><a href="#">ID: <?php echo $_SESSION['user']; ?></a></li>
@@ -60,12 +59,6 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-
-
-
-
-
-
     <div class="container">
         <div class="row">
             <div class="col-xs-6 col-md-5">
@@ -92,7 +85,7 @@
 
         </div>
     </div>
-    <div id="teamliste">
+    <!-- <div id="teamliste">
       <div class="thumbnail">
         <table class="table table-bordered">
         <thead>
@@ -152,7 +145,7 @@
         </thead>
       </table>
       </div>
-    </div>
+    </div> -->
 </body>
 
 <script>
