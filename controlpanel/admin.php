@@ -1015,7 +1015,7 @@
                     </label>
                 </div>
             </div>
-            <input type="text" class="form-control" id="completly_different">
+            <input type="text" class="form-control" id="bb1_info" style="width: 200px">
         </div>
     </div>
     <div class="table2_game2">
@@ -1069,7 +1069,7 @@
                     </label>
             </div>
         </div>
-        <input type="text" class="form-control" id="completly_different">
+        <input type="text" class="form-control" id="bb2_info">
     </div>
     <div class="table3_game3">
         <h3>Spielkontrolle</h3>
@@ -1122,7 +1122,7 @@
                     </label>
             </div>
         </div>
-        <input type="text" class="form-control" id="completly_different">
+        <input type="text" class="form-control" id="bb3_info">
     </div>
     <div class="table4_game4">
         <h3>Spielkontrolle</h3>
@@ -1175,7 +1175,7 @@
                     </label>
             </div>
         </div>
-        <input type="text" class="form-control" id="completly_different">
+        <input type="text" class="form-control" id="bb4_info">
     </div>
     <div class="table5_game5">
         <h3>Spielkontrolle</h3>
@@ -1228,7 +1228,7 @@
                     </label>
             </div>
         </div>
-        <input type="text" class="form-control" id="completly_different">
+        <input type="text" class="form-control" id="bb5_info">
     </div>
     <div class="table6_game6">
         <h3>Spielkontrolle</h3>
@@ -1281,7 +1281,7 @@
                     </label>
             </div>
         </div>
-        <input type="text" class="form-control" id="completly_different">
+        <input type="text" class="form-control" id="bb6_info">
     </div>
     <div class="table7_game7">
         <h3>Spielkontrolle</h3>
@@ -1334,7 +1334,7 @@
                     </label>
             </div>
         </div>
-        <input type="text" class="form-control" id="completly_different">
+        <input type="text" class="form-control" id="bb7_info">
     </div>
     <div class="table8_game8">
         <h3>Spielkontrolle</h3>
@@ -1387,7 +1387,7 @@
                     </label>
             </div>
         </div>
-        <input type="text" class="form-control" id="completly_different">
+        <input type="text" class="form-control" id="bb8_info">
     </div>
     <div class="tw_game tw1">
         <h3>Spielkontrolle Spiel 1</h3>
@@ -2196,6 +2196,14 @@
         $('#tw6_game6-info').prop('checked'),
         $('#tw6_game6-winLeft').prop('checked'),
         $('#tw6_game6-winRight').prop('checked')];
+        var bomberman_info = [$('#bb1_info').val(),
+        $('#bb2_info').val(),
+        $('#bb3_info').val(),
+        $('#bb4_info').val(),
+        $('#bb5_info').val(),
+        $('#bb6_info').val(),
+        $('#bb7_info').val(),
+        $('#bb8_info').val()];
         var teeworlds_info = [$('#tw1_info').val(),
         $('#tw2_info').val(),
         $('#tw3_info').val(),
@@ -2232,7 +2240,8 @@
             teeworlds_game4_button: teeworlds_game4_button,
             teeworlds_game5_button: teeworlds_game5_button,
             teeworlds_game6_button: teeworlds_game6_button,
-            teeworlds_info: teeworlds_info
+            teeworlds_info: teeworlds_info,
+            bomberman_info: bomberman_info
         });
         return false;
     });

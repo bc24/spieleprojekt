@@ -29,9 +29,11 @@ $teeworlds_game4_button = $_POST['teeworlds_game4_button'];
 $teeworlds_game5_button = $_POST['teeworlds_game5_button'];
 $teeworlds_game6_button = $_POST['teeworlds_game6_button'];
 $teeworlds_info = $_POST['teeworlds_info'];
+$bomberman_info = $_POST['bomberman_info'];
 
 $tw_table_rightwin = array("notwon", "notwon", "notwon", "notwon", "notwon", "notwon");
 $tw_table_leftwin = array("notwon", "notwon", "notwon", "notwon", "notwon", "notwon");
+$bb_table_info =array("","","","","","","","");
 $tw_table_info =array("","","","","","");
 $tw_table = array("inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game");
 $bb_table = array("inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game");
@@ -43,6 +45,15 @@ if ($bomberman_table1_button[2] == 'true')
 {
   $bb_table[0] = "closed-game";
 }
+if ($bomberman_table1_button[3] == 'true')
+{
+  $bb_table_info[0] = "<div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      $bomberman_info[0]
+    </div>
+  </div>";
+}
 if ($bomberman_table2_button[1] == 'true')
 {
   $bb_table[1] = "active-game";
@@ -50,6 +61,15 @@ if ($bomberman_table2_button[1] == 'true')
 if ($bomberman_table2_button[2] == 'true')
 {
   $bb_table[1] = "closed-game";
+}
+if ($bomberman_table2_button[3] == 'true')
+{
+  $bb_table_info[1] = "<div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      $bomberman_info[1]
+    </div>
+  </div>";
 }
 if ($bomberman_table3_button[1] == 'true')
 {
@@ -59,6 +79,15 @@ if ($bomberman_table3_button[2] == 'true')
 {
   $bb_table[2] = "closed-game";
 }
+if ($bomberman_table3_button[3] == 'true')
+{
+  $bb_table_info[2] = "<div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      $bomberman_info[2]
+    </div>
+  </div>";
+}
 if ($bomberman_table4_button[1] == 'true')
 {
   $bb_table[3] = "active-game";
@@ -66,6 +95,15 @@ if ($bomberman_table4_button[1] == 'true')
 if ($bomberman_table4_button[2] == 'true')
 {
   $bb_table[3] = "closed-game";
+}
+if ($bomberman_table4_button[3] == 'true')
+{
+  $bb_table_info[3] = "<div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      $bomberman_info[3]
+    </div>
+  </div>";
 }
 if ($bomberman_table5_button[1] == 'true')
 {
@@ -75,6 +113,15 @@ if ($bomberman_table5_button[2] == 'true')
 {
   $bb_table[4] = "closed-game";
 }
+if ($bomberman_table5_button[3] == 'true')
+{
+  $bb_table_info[4] = "<div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      $bomberman_info[4]
+    </div>
+  </div>";
+}
 if ($bomberman_table6_button[1] == 'true')
 {
   $bb_table[5] = "active-game";
@@ -82,6 +129,15 @@ if ($bomberman_table6_button[1] == 'true')
 if ($bomberman_table6_button[2] == 'true')
 {
   $bb_table[5] = "closed-game";
+}
+if ($bomberman_table6_button[3] == 'true')
+{
+  $bb_table_info[5] = "<div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      $bomberman_info[5]
+    </div>
+  </div>";
 }
 if ($bomberman_table7_button[1] == 'true')
 {
@@ -91,6 +147,15 @@ if ($bomberman_table7_button[2] == 'true')
 {
   $bb_table[6] = "closed-game";
 }
+if ($bomberman_table7_button[3] == 'true')
+{
+  $bb_table_info[6] = "<div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      $bomberman_info[6]
+    </div>
+  </div>";
+}
 if ($bomberman_table8_button[1] == 'true')
 {
   $bb_table[7] = "active-game";
@@ -98,6 +163,15 @@ if ($bomberman_table8_button[1] == 'true')
 if ($bomberman_table8_button[2] == 'true')
 {
   $bb_table[7] = "closed-game";
+}
+if ($bomberman_table8_button[3] == 'true')
+{
+  $bb_table_info[7] = "<div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      $bomberman_info[7]
+    </div>
+  </div>";
 }
 //Teeworlds Spielkontrolle Spiel 1
 if ($teeworlds_game1_button[1] == 'true')
@@ -342,7 +416,7 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
         </thead>
     </table>
     <div>
-    $bb_info[0]
+    $bb_table_info[0]
     </div>
 </div>
 <!-- Ende des Table-Raum1-Bomberman -->
@@ -405,6 +479,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
     </tr>
     </thead>
 </table>
+<div>
+$bb_table_info[1]
+</div>
 </div>
 <!-- Ende des Table-Raum2-Bomberman -->
 <!-- Start des Table-Raum3-Bomberman -->
@@ -466,6 +543,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
     </tr>
     </thead>
 </table>
+<div>
+$bb_table_info[2]
+</div>
 </div>
 <!-- Ende des Table-Raum3-Bomberman -->
 <!-- Start des Table-Raum4-Bomberman -->
@@ -527,6 +607,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
     </tr>
     </thead>
 </table>
+<div>
+$bb_table_info[3]
+</div>
 </div>
 <!-- Ende des Table-Raum4-Bomberman -->
 <!-- Start des Headers-Finalrunde-Bomberman -->
@@ -593,6 +676,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
     </tr>
     </thead>
 </table>
+<div>
+$bb_table_info[4]
+</div>
 </div>
 <!-- Ende des Table-Raum1-Bomberman -->
 <!-- Start des Table-Raum2-Bomberman -->
@@ -654,6 +740,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
     </tr>
     </thead>
 </table>
+<div>
+$bb_table_info[5]
+</div>
 </div>
 <!-- Ende des Table-Raum2-Bomberman -->
 <!-- Start des Table-Raum3-Bomberman -->
@@ -715,6 +804,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
     </tr>
     </thead>
 </table>
+<div>
+$bb_table_info[6]
+</div>
 </div>
 <!-- Ende des Table-Raum3-Bomberman -->
 <!-- Start des Table-Raum4-Bomberman -->
@@ -776,6 +868,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
     </tr>
     </thead>
 </table>
+<div>
+$bb_table_info[7]
+</div>
 </div>
 <!-- Ende des eader-Teeworlds -->
 <div class='thumbnail thumbnail-bomberman'>
