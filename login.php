@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="stylesheets/login.css">
 </head>
 <?php
-  session_start();
   include ("scripts/login.php");
 
  ?>

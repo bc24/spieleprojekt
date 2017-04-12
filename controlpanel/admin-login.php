@@ -21,9 +21,13 @@
     <link rel="stylesheet" href="../stylesheets/login.css">
 </head>
 <?php
-  session_start();
   include ("../scripts/db_config.php");
   include ("../scripts/admin-login.php");
+
+  if (!isset($_SESSION['user']))
+    {
+      header("Location:login.php");
+    }
 
  ?>
 <body>
@@ -43,10 +47,10 @@
                               <form method="post">
                                 <div class="form-group">
                                   <div class="input-group input-group-lg username">
-                                      <input id="input" name="username" type="text" class="form-control" placeholder="Nutzernummer" value="<?php if (isset($_POST['username'])) {echo addslashes($_POST['username']);} ?>">
+                                      <input id="input" name="username" type="text" class="form-control" placeholder="Nutzernummer-Admin" value="<?php if (isset($_POST['username'])) {echo addslashes($_POST['username']);} ?>">
                                   </div>
                                   <div class="input-group input-group-lg password">
-                                      <input id="input" name="password" type="password" class="form-control" placeholder="Passwort">
+                                      <input id="input" name="password" type="password" class="form-control" placeholder="Admin-Passwort">
                                   </div>
                                   <input type="submit" class="btn btn-success" id="einloggen" value="Einloggen" name="LogIn">
                                 </div>
