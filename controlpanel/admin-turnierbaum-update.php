@@ -329,7 +329,7 @@ if ($teeworlds_game6_button[5] == 'true')
 {
   $tw_table_rightwin[5] = "finished-game-tw-text";
 }
-file_put_contents('../turnierbaum/turnierbaum-test.html',
+file_put_contents('../turnierbaum/turnierbaum.html',
 "
 <!-- Start des Headers -->
 <div class='thumbnail'>

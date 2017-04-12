@@ -1,121 +1,781 @@
-<!doctype html>
-<html>
-<head>
-    <title></title>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<script></script>
-
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-  <!-- jquery script -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  <!-- Stylesheet akzeptanz.css -->
-  <!-- <link rel="stylesheet" href="../stylesheets/turnierbaum.css"> -->
-<style>
-body {
-  margin-top: 5%;
-  text-align: center;
-  margin-left: -32%;
-}
-.glyphicon {
-    font-size: 50px;
-    margin-top: 0px;
-    padding: 0;
-    margin-left: -90%;
-}
-.thumbnail {
-  margin-top: -30px;
-  padding-bottom: 100px;
-  margin-left: 0px;
-}
-.caption {
-  margin-left: -90%;
-  padding: 0px;
-  margin-top: -2%;
-}
-#startzeit {
-  margin-top: -10%;
-  margin-left: -60%;
-}
-#dauer {
-  margin-left: -60%;
-}
-#teamLinks {
-  margin-left: -20%;
-}
-#teamRechts {
-  margin-right: -20%;
-  margin-top: -4.15%;
-}
-#versus {
-  margin-top: -5%;
-}
-#punkteText {
-margin-left: -40%;
-margin-top: -0%;
-}
-#punkteTeamLinks {
-margin-left: 212px;
-margin-top: -38px;
-}
-#punkteTeamRechts {
-margin-left: 325px;
-margin-top: -34px;
-}
-.form-control {
-  width: 50px;
-}
-
-</style>
-</head>
-
-<body>
-  <div class="container">
-      <div class="row">
-          <div class="col-xs-6 col-md-12">
-              <div class="thumbnail">
-                  <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
-                  <div class="caption">
-                      <h3>Spiel 1</h3>
-                  </div>
-                  <div id="startzeit">
-                    <h3>Start: 14:10:00 Uhr</h3>
-                  </div>
-                  <div id="dauer">
-                    <h3>10 Minuten</h3>
-                  </div>
-                  <div id="teamLinks">
-                    <h3>Team 1</h3>
-                  </div>
-                  <div id="teamRechts">
-                    <h3>Team 2</h3>
-                  </div>
-                  <div id="versus">
-                    <h1>VS</h1>
-                  </div>
-                  <div id="punkteText">
-                    <h3>Punkte</h3>
-                  </div>
-                  <div id="punkteTeamLinks">
-                    <input type="text" class="form-control" id="punkteTeamLinks" disabled value="1">
-                  </div>
-                  <div id="punkteTeamRechts">
-                    <input type="text" class="form-control" id="punkteTeamRechts" disabled value="0">
-                  </div>
-              </div>
-          </div>
-      </div>
+<!-- Start des Headers -->
+<div class='thumbnail'>
+    <h1 class='text-center' id='header-top'><strong>Turnierbaum</strong></h1>
+    <div class='panel panel-default'>
+        <div class='panel-body text-center' id='panel-header'>
+            Hier findest du alle Informationen zu den aktuellen Spielen :) Die Seite aktualisiert sich aller 7 Sekunden automatisch.
+        </div>
+    </div>
+</div>
+<!-- Ende des Headers -->
+<!-- Start des Headers-Bomberman -->
+<div class='thumbnail thumbnail-bomberman'>
+    <h1 class='text-center' id='header'><strong>Bomberman</strong></h1>
+    <!-- <div class='panel panel-default'>
+<div class='panel-body text-center' id='panel-header'>
+  Hier findest du alle Informationen zum Bomberman-Turnier :) Natürlich immer up-to-date
+</div> -->
+</div>
+</div>
+<!-- Ende des Headers-Bomberman -->
+<!-- Start des Headers-Vorrunde-Bomberman -->
+<div class='thumbnail thumbnail-bomberman'>
+    <h3 class='text-center' id='header-vorrunde'><strong>Vorrunde</strong></h3>
+</div>
+<!-- Ende des Headers-Vorrunde-Bomberman -->
+<!-- Start des Table-Raum1-Bomberman -->
+<div class='thumbnail active-game'>
+    <table class='table table-bordered'>
+        <thead>
+            <tr>
+                <th>Raum 1</th>
+                <th>Sara</th>
+                <th>Alec</th>
+                <th>Kevin K.</th>
+                <th>Dennis</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1. Platz</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>2. Platz</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>3. Platz</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <thead>
+        </tbody>
+        <tr>
+            <th>4. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Punkte</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </thead>
+    </table>
+    <div>
+    <div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      
+    </div>
   </div>
-</body>
-</html>
+    </div>
+</div>
+<!-- Ende des Table-Raum1-Bomberman -->
+<!-- Start des Table-Raum2-Bomberman -->
+<div class='thumbnail inactive-game'>
+<table class='table table-bordered'>
+    <thead>
+        <tr>
+            <th>Raum 2</th>
+            <th>Eric</th>
+            <th>Cora</th>
+            <th>Raphael</th>
+            <th>Erik</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>2. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>3. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <thead>
+    </tbody>
+    <tr>
+        <th>4. Platz</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Punkte</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Platz</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </thead>
+</table>
+<div>
+
+</div>
+</div>
+<!-- Ende des Table-Raum2-Bomberman -->
+<!-- Start des Table-Raum3-Bomberman -->
+<div class='thumbnail inactive-game'>
+<table class='table table-bordered'>
+    <thead>
+        <tr>
+            <th>Raum 3</th>
+            <th>Noah</th>
+            <th>Tom</th>
+            <th>Max</th>
+            <th>Konstantin</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>2. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>3. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <thead>
+    </tbody>
+    <tr>
+        <th>4. Platz</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Punkte</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Platz</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </thead>
+</table>
+<div>
+
+</div>
+</div>
+<!-- Ende des Table-Raum3-Bomberman -->
+<!-- Start des Table-Raum4-Bomberman -->
+<div class='thumbnail inactive-game'>
+<table class='table table-bordered'>
+    <thead>
+        <tr>
+            <th>Raum 4</th>
+            <th>Gregor</th>
+            <th>Roman</th>
+            <th>Richard</th>
+            <th>Julian</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>2. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>3. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <thead>
+    </tbody>
+    <tr>
+        <th>4. Platz</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Punkte</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Platz</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </thead>
+</table>
+<div>
+
+</div>
+</div>
+<!-- Ende des Table-Raum4-Bomberman -->
+<!-- Start des Headers-Finalrunde-Bomberman -->
+<div class='thumbnail thumbnail-bomberman'>
+    <h3 class='text-center' id='header-vorrunde'><strong>Finalrunde</strong></h3>
+</div>
+<!-- Ende des Headers-Finalrunde-Bomberman -->
+<!-- Start des Table-Raum1-Bomberman -->
+<div class='thumbnail inactive-game'>
+<table class='table table-bordered'>
+    <thead>
+        <tr>
+            <th>Raum 1</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>2. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>3. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <thead>
+    </tbody>
+    <tr>
+        <th>4. Platz</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Punkte</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Platz</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </thead>
+</table>
+<div>
+
+</div>
+</div>
+<!-- Ende des Table-Raum1-Bomberman -->
+<!-- Start des Table-Raum2-Bomberman -->
+<div class='thumbnail inactive-game'>
+<table class='table table-bordered'>
+    <thead>
+        <tr>
+            <th>Raum 2</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>2. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>3. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <thead>
+    </tbody>
+    <tr>
+        <th>4. Platz</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Punkte</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Platz</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </thead>
+</table>
+<div>
+
+</div>
+</div>
+<!-- Ende des Table-Raum2-Bomberman -->
+<!-- Start des Table-Raum3-Bomberman -->
+<div class='thumbnail inactive-game'>
+<table class='table table-bordered'>
+    <thead>
+        <tr>
+            <th>Raum 3</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>2. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>3. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <thead>
+    </tbody>
+    <tr>
+        <th>4. Platz</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Punkte</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Platz</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </thead>
+</table>
+<div>
+
+</div>
+</div>
+<!-- Ende des Table-Raum3-Bomberman -->
+<!-- Start des Table-Raum4-Bomberman -->
+<div class='thumbnail inactive-game'>
+<table class='table table-bordered'>
+    <thead>
+        <tr>
+            <th>Raum 4</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>2. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>3. Platz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <thead>
+    </tbody>
+    <tr>
+        <th>4. Platz</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Punkte</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Platz</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </thead>
+</table>
+<div>
+
+</div>
+</div>
+<!-- Ende des eader-Teeworlds -->
+<div class='thumbnail thumbnail-bomberman'>
+    <h1 class='text-center' id='header'><strong>Teeworlds</strong></h1>
+</div>
+<!-- Ende des Header-Teeworlds -->
+<!-- Start des Spiel1-Teeworlds -->
+<div class='thumbnail'>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-2'>
+                <div class='icon_und_spielNummer inactive-game'>
+                    <span class='glyphicon glyphicon-play-circle' aria-hidden='true'></span>
+                    <h3 id='gameNumber'>Spiel 1</h3>
+                </div>
+            </div>
+            <div class='col-md-9'>
+                <div class='teams_und_vs'>
+                    <h3 class=' notwon '><span>Team 1 </span></h3>
+                    <h3><span>VS </span></h3>
+                    <h3 class=' notwon '><span>Team 2</span></h3>
+                </div>
+            </div>
+            <div class='col-md-9 col-md-offset-1'>
+            <div class='punkte'>
+              <h3><span>Punkte:</span></h3>
+              <h3><span id='punkteLinks'></span></h3>
+              <h3><span id='punkteRechts'></span></h3>
+            </div>
+          </div>
+          <div class='col-md-9 col-md-offset-1'>
+            <div class='start_und_dauer'>
+              <h3><span>Start:</span><span id='start_zeit'>13:59</span></h3>
+              <br />
+              <h3><span id='dauer'>Dauer:</span><span>10 min</span></h3>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div>
+    
+    </div>
+</div>
+<!-- Ende des Spiel1-Teeworlds -->
+<!-- Start des Spiel2-Teeworlds -->
+<div class='thumbnail'>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-2'>
+                <div class='icon_und_spielNummer'>
+                    <span class='glyphicon glyphicon-play-circle' aria-hidden='true'></span>
+                    <h3 id='gameNumber'>Spiel 2</h3>
+                </div>
+            </div>
+            <div class='col-md-9'>
+                <div class='teams_und_vs'>
+                    <h3 class=' notwon '>Team 3 </span></h3>
+                    <h3><span>VS </span></h3>
+                    <h3 class=' notwon '>Team 4</span></h3>
+                </div>
+            </div>
+            <div class='col-md-9 col-md-offset-1'>
+            <div class='punkte'>
+              <h3><span>Punkte:</span></h3>
+              <h3><span id='punkteLinks'></span></h3>
+              <h3><span id='punkteRechts'></span></h3>
+            </div>
+          </div>
+          <div class='col-md-9 col-md-offset-1'>
+            <div class='start_und_dauer'>
+              <h3><span>Start:</span><span id='start_zeit'>13:59</span></h3>
+              <br />
+              <h3><span id='dauer'>Dauer:</span><span>10 min</span></h3>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div>
+    
+    </div>
+</div>
+<!-- Ende des Spiel2-Teeworlds -->
+<!-- Start des Spiel3-Teeworlds -->
+<div class='thumbnail'>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-2'>
+                <div class='icon_und_spielNummer'>
+                    <span class='glyphicon glyphicon-play-circle' aria-hidden='true'></span>
+                    <h3 id='gameNumber'>Spiel 3</h3>
+                </div>
+            </div>
+            <div class='col-md-9'>
+                <div class='teams_und_vs'>
+                    <h3 class=' notwon '>Team 1 </span></h3>
+                    <h3><span>VS </span></h3>
+                    <h3 class=' notwon '>Team 3</span></h3>
+                </div>
+            </div>
+            <div class='col-md-9 col-md-offset-1'>
+            <div class='punkte'>
+              <h3><span>Punkte:</span></h3>
+              <h3><span id='punkteLinks'></span></h3>
+              <h3><span id='punkteRechts'></span></h3>
+            </div>
+          </div>
+          <div class='col-md-9 col-md-offset-1'>
+            <div class='start_und_dauer'>
+              <h3><span>Start:</span><span id='start_zeit'>14:11</span></h3>
+              <br />
+              <h3><span id='dauer'>Dauer:</span><span>10 min</span></h3>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div>
+    
+    </div>
+</div>
+<!-- Ende des Spiel3-Teeworlds -->
+<!-- Start des Spiel4-Teeworlds -->
+<div class='thumbnail'>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-2'>
+                <div class='icon_und_spielNummer'>
+                    <span class='glyphicon glyphicon-play-circle' aria-hidden='true'></span>
+                    <h3 id='gameNumber'>Spiel 4</h3>
+                </div>
+            </div>
+            <div class='col-md-9'>
+                <div class='teams_und_vs'>
+                    <h3 class=' notwon '>Team 2 </span></h3>
+                    <h3><span>VS </span></h3>
+                    <h3 class=' notwon '>Team 4</span></h3>
+                </div>
+            </div>
+            <div class='col-md-9 col-md-offset-1'>
+            <div class='punkte'>
+              <h3><span>Punkte:</span></h3>
+              <h3><span id='punkteLinks'></span></h3>
+              <h3><span id='punkteRechts'></span></h3>
+            </div>
+          </div>
+          <div class='col-md-9 col-md-offset-1'>
+            <div class='start_und_dauer'>
+              <h3><span>Start:</span><span id='start_zeit'>14:11</span></h3>
+              <br />
+              <h3><span id='dauer'>Dauer:</span><span>10 min</span></h3>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div>
+    
+    </div>
+</div>
+<!-- Ende des Spiel4-Teeworlds -->
+<!-- Start des Spiel5-Teeworlds -->
+<div class='thumbnail'>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-2'>
+                <div class='icon_und_spielNummer'>
+                    <span class='glyphicon glyphicon-play-circle' aria-hidden='true'></span>
+                    <h3 id='gameNumber'>Spiel 5</h3>
+                </div>
+            </div>
+            <div class='col-md-9'>
+                <div class='teams_und_vs'>
+                    <h3 class=' notwon '>Team 1 </span></h3>
+                    <h3><span>VS </span></h3>
+                    <h3 class=' notwon '>Team 4</span></h3>
+                </div>
+            </div>
+            <div class='col-md-9 col-md-offset-1'>
+            <div class='punkte'>
+              <h3><span>Punkte:</span></h3>
+              <h3><span id='punkteLinks'></span></h3>
+              <h3><span id='punkteRechts'></span></h3>
+            </div>
+          </div>
+          <div class='col-md-9 col-md-offset-1'>
+            <div class='start_und_dauer'>
+              <h3><span>Start:</span><span id='start_zeit'>14:23</span></h3>
+              <br />
+              <h3><span id='dauer'>Dauer:</span><span>10 min</span></h3>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div>
+    
+    </div>
+</div>
+<!-- Ende des Spiel5-Teeworlds -->
+<!-- Start des Spiel6-Teeworlds -->
+<div class='thumbnail'>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-2'>
+                <div class='icon_und_spielNummer'>
+                    <span class='glyphicon glyphicon-play-circle' aria-hidden='true'></span>
+                    <h3 id='gameNumber'>Spiel 6</h3>
+                </div>
+            </div>
+            <div class='col-md-9'>
+                <div class='teams_und_vs'>
+                    <h3 class=' notwon '>Team 2 </span></h3>
+                    <h3><span>VS </span></h3>
+                    <h3 class=' notwon '>Team 3</span></h3>
+                </div>
+            </div>
+            <div class='col-md-9 col-md-offset-1'>
+            <div class='punkte'>
+              <h3><span>Punkte:</span></h3>
+              <h3><span id='punkteLinks'></span></h3>
+              <h3><span id='punkteRechts'></span></h3>
+            </div>
+          </div>
+          <div class='col-md-9 col-md-offset-1'>
+            <div class='start_und_dauer'>
+              <h3><span>Start:</span><span id='start_zeit'>14:23</span></h3>
+              <br />
+              <h3><span id='dauer'>Dauer:</span><span>10 min</span></h3>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div>
+    
+    </div>
+</div>
+<!-- Ende des Spiel6-Teeworlds -->
+    

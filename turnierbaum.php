@@ -120,7 +120,7 @@ if (!isset($_SESSION['user']))
 
     function loadTurnierbaum() {
         $.ajax({
-            url: "turnierbaum/turnierbaum-test.html",
+            url: "turnierbaum/turnierbaum.html",
             cache: false,
             success: function(html) {
                 $('.turnierbaum').html(html);

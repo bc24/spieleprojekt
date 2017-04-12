@@ -44,8 +44,13 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" id="ButtonTest">Button Test</a></li>
-                <li><a href="#" id="fillData">Daten füllen</a></li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Testing <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#" id="ButtonTest">Button Test</a></li>
+                      <li><a href="#" id="fillData">Daten füllen</a></li>
+                  </ul>
+              </li>
                 <li><a href="#" id="saveData">Daten speichern</a></li>
             </ul>
         </div>
@@ -1015,7 +1020,7 @@
                     </label>
                 </div>
             </div>
-            <input type="text" class="form-control" id="bb1_info" style="width: 200px">
+            <input type="text" class="form-control" id="bb1_info" style="width: 400px">
         </div>
     </div>
     <div class="table2_game2">
