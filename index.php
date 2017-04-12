@@ -48,7 +48,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class=""><a href="turnierbaum.php">Turnierbaum</a></li>
-          <li><a href="akzeptanz.php">Akzeptanzanalyse</a></li>
+          <li><a href="<?php include("akzeptanz/akzeptanz-update-index.php"); ?>">Akzeptanzanalyse</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Name: <?php echo $_SESSION['username']; ?></a></li>
@@ -155,7 +155,7 @@
   });
 
   $('#akzeptanz').click(function() {
-    document.location.href='akzeptanz.php';
+    document.location.href='<?php include("akzeptanz/akzeptanz-update-index.php"); ?>';
   });
 
   $('#logout').click(function() {

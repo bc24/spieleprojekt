@@ -1864,7 +1864,7 @@
 
     $('#akzeptanz-starten').click(function() {
         var start = "starten";
-        $.post("admin-akzeptanz-control.php",{ start: start});
+        $.post("admin-akzeptanz-control.php",{start: start});
     });
 
     $('#akzeptanz-beenden').click(function() {
