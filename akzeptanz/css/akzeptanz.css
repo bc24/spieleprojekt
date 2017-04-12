@@ -3,6 +3,12 @@ body {
   text-align: center;
   font-size:24px;
   font-style: Helvetica;
+  margin:0;
+  padding:0;
+}
+
+form{
+  padding-top: 80px;
 }
 
 #ladescreen{

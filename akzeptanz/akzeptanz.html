@@ -15,7 +15,8 @@
 
     <!-- Stylesheet standard.css -->
     <link rel="stylesheet" type="text/css" href="stylesheets/rangestyle.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/akzeptanz.css" />
+    <link rel="stylesheet" type="text/css" href="akzeptanz\css\akzeptanz.css" />
+    <link rel="stylesheet" type="text/css" href="akzeptanz\css\navbar.css" />
 
     <!-- Eignene scripts -->
 
@@ -23,10 +24,26 @@
 </head>
 
 <body onload="schließenderfragen()">
+  <nav>
+      <ul>
+        <li id="fett"><a href="index.php">Webanwendung</a></li>
+        <li ><a href="turnierbaum.php">Turnierbaum</a></li>
+        <li class="active"><a href="#">Akzeptanzanalyse</a></li>
+        <li class="daten"><a href="#">Team: <?php echo $_SESSION['team']; ?></a></li>
+        <li class="daten"><a href="#">Spieler: <?php echo $_SESSION['player']; ?> </a></li>
+        <li class="daten"><a href="#">ID: <?php echo $_SESSION['user']; ?></a></li>
+        <li class="daten"><a href="#">Name: <?php echo $_SESSION['username']; ?></a></li>
+      </ul>
+  </nav>
 
   <span id="ladescreen">
     <!-- Beim öffnen der Seite erscheinen der Fragen -->
   </span>
+
+  <div id="bestaetigung">
+    <!-- Bei absenden bestätigung -->
+  </div>
+
 
   <form method="post">
     <div>
@@ -217,9 +234,10 @@
 
 </body>
 <!-- Nicht an den Anfang da sonst nciht ausgefürht wird -->
-<script src="akzeptanz\varakzeptanz.js"></script>
-<script src="akzeptanz\schliessenfragen.js"></script>
-<script src="akzeptanz\akzeptanz.js?t=< ?= time(); ?"></script>
-<script src="akzeptanz\animationFragen.js?t=< ?= time(); ?"></script>
+<script src="akzeptanz\scripts\varakzeptanz.js"></script>
+<script src="akzeptanz\scripts\schliessenfragen.js"></script>
+<script src="akzeptanz\scripts\akzeptanz.js?t=< ?= time(); ?"></script>
+<script src="akzeptanz\scripts\animationFragen.js?t=< ?= time(); ?"></script>
+<script src="akzeptanz\scripts\aktionen.js?t=< ?= time(); ?"></script>
 
 </html>
