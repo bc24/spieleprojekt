@@ -28,6 +28,8 @@ $teeworlds_game3_button = $_POST['teeworlds_game3_button'];
 $teeworlds_game4_button = $_POST['teeworlds_game4_button'];
 $teeworlds_game5_button = $_POST['teeworlds_game5_button'];
 $teeworlds_game6_button = $_POST['teeworlds_game6_button'];
+$teeworlds_info = $_POST['teeworlds_info'];
+
 $tw_table_rightwin = array("notwon", "notwon", "notwon", "notwon", "notwon", "notwon");
 $tw_table_leftwin = array("notwon", "notwon", "notwon", "notwon", "notwon", "notwon");
 $tw_table_info =array("","","","","","");
@@ -111,7 +113,7 @@ if ($teeworlds_game1_button[3] == 'true')
   $tw_table_info[0] = "<div class='panel panel-primary'>
     <div class='panel-heading'>Hinweise zum Spiel</div>
     <div class='panel-body'>
-      Spiel findet auf folgender IP statt:
+      $teeworlds_info[0]
     </div>
   </div>";
 }
@@ -137,7 +139,7 @@ if ($teeworlds_game2_button[3] == 'true')
   $tw_table_info[1] = "<div class='panel panel-primary'>
     <div class='panel-heading'>Hinweise zum Spiel</div>
     <div class='panel-body'>
-      Spiel findet auf folgender IP statt:
+      $teeworlds_info[1]
     </div>
   </div>";
 }
@@ -163,7 +165,7 @@ if ($teeworlds_game3_button[3] == 'true')
   $tw_table_info[2] = "<div class='panel panel-primary'>
     <div class='panel-heading'>Hinweise zum Spiel</div>
     <div class='panel-body'>
-      Spiel findet auf folgender IP statt:
+      $teeworlds_info[2]
     </div>
   </div>";
 }
@@ -189,7 +191,7 @@ if ($teeworlds_game4_button[3] == 'true')
   $tw_table_info[3] = "<div class='panel panel-primary'>
     <div class='panel-heading'>Hinweise zum Spiel</div>
     <div class='panel-body'>
-      Spiel findet auf folgender IP statt:
+      $teeworlds_info[3]
     </div>
   </div>";
 }
@@ -215,7 +217,7 @@ if ($teeworlds_game5_button[3] == 'true')
   $tw_table_info[4] = "<div class='panel panel-primary'>
     <div class='panel-heading'>Hinweise zum Spiel</div>
     <div class='panel-body'>
-      Spiel findet auf folgender IP statt:
+      $teeworlds_info[4]
     </div>
   </div>";
 }
@@ -241,7 +243,7 @@ if ($teeworlds_game6_button[3] == 'true')
   $tw_table_info[5] = "<div class='panel panel-primary'>
     <div class='panel-heading'>Hinweise zum Spiel</div>
     <div class='panel-body'>
-      Spiel findet auf folgender IP statt:
+      $teeworlds_info[5]
     </div>
   </div>";
 }

@@ -2196,7 +2196,12 @@
         $('#tw6_game6-info').prop('checked'),
         $('#tw6_game6-winLeft').prop('checked'),
         $('#tw6_game6-winRight').prop('checked')];
-        var teeworlds_info = [$('#tw1_info').val(),$('#tw2_info').val(),$('#tw3_info').val(),$('#tw4_info').val(),$('#tw5_info').val(),$('#tw6_info').val()];
+        var teeworlds_info = [$('#tw1_info').val(),
+        $('#tw2_info').val(),
+        $('#tw3_info').val(),
+        $('#tw4_info').val(),
+        $('#tw5_info').val(),
+        $('#tw6_info').val()];
 
         $.post("admin-turnierbaum-update.php", {
             bomberman_table1: bomberman_table1,
