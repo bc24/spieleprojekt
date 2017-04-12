@@ -69,7 +69,7 @@
         width: 430px;
         height: 500%;
         margin-left: 70%;
-        margin-top: -275%;
+        margin-top: -315%;
         padding-bottom: 12%;
         padding-top: -1000px;
     }
@@ -259,10 +259,10 @@
         <thead>
             <tr>
                 <th class="input_tabelle_raum">Raum 1</th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 1" id="bomberman_table1_playerOne"></th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 2" id="bomberman_table1_playerTwo"></th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 3" id="bomberman_table1_playerThree"></th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 4" id="bomberman_table1_playerFour"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 1" id="bomberman_table1_playerOne" value="Sara"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 2" id="bomberman_table1_playerTwo" value="Alec"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 3" id="bomberman_table1_playerThree" value="Kevin K."></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 4" id="bomberman_table1_playerFour" value="Dennis"></th>
             </tr>
         </thead>
         <tbody>
@@ -320,10 +320,10 @@
         <thead>
             <tr>
                 <th class="input_tabelle_raum">Raum 2</th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 1" id="bomberman_table2_playerOne"></th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 2" id="bomberman_table2_playerTwo"></th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 3" id="bomberman_table2_playerThree"></th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 4" id="bomberman_table2_playerFour"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 1" id="bomberman_table2_playerOne" value="Eric"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 2" id="bomberman_table2_playerTwo" value="Cora"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 3" id="bomberman_table2_playerThree" value="Raphael"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 4" id="bomberman_table2_playerFour" value="Erik"></th>
             </tr>
         </thead>
         <tbody>
@@ -381,10 +381,10 @@
         <thead>
             <tr>
                 <th class="input_tabelle_raum">Raum 3</th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 1" id="bomberman_table3_playerOne"></th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 2" id="bomberman_table3_playerTwo"></th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 3" id="bomberman_table3_playerThree"></th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 4" id="bomberman_table3_playerFour"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 1" id="bomberman_table3_playerOne" value="Noah"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 2" id="bomberman_table3_playerTwo" value="Tom"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 3" id="bomberman_table3_playerThree" value="Max"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 4" id="bomberman_table3_playerFour" value="Konstantin"></th>
             </tr>
         </thead>
         <tbody>
@@ -442,10 +442,10 @@
         <thead>
             <tr>
                 <th class="input_tabelle_raum">Raum 4</th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 1" id="bomberman_table4_playerOne"></th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 2" id="bomberman_table4_playerTwo"></th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 3" id="bomberman_table4_playerThree"></th>
-                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 4" id="bomberman_table4_playerFour"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 1" id="bomberman_table4_playerOne" value="Gregor"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 2" id="bomberman_table4_playerTwo" value="Roman"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 3" id="bomberman_table4_playerThree" value="Richard"></th>
+                <th class="input_tabelle"><input type="text" class="form-control input_tabelle" placeholder="Spieler 4" id="bomberman_table4_playerFour" value="Julian"></th>
             </tr>
         </thead>
         <tbody>
@@ -1390,7 +1390,7 @@
         <input type="text" class="form-control" id="completly_different">
     </div>
     <div class="tw_game tw1">
-        <h3>Spielkontrolle</h3>
+        <h3>Spielkontrolle Spiel 1</h3>
         <hr />
         <div class="[ form-group ]">
             <input type="checkbox" name="tw1_game1-default" id="tw1_game1-default" autocomplete="off" />
@@ -1464,10 +1464,10 @@
                     </label>
             </div>
         </div>
-        <input type="text" class="form-control" id="completly_different">
+        <input type="text" class="form-control" id="tw1_info">
     </div>
     <div class="tw_game">
-        <h3>Spielkontrolle</h3>
+        <h3>Spielkontrolle Spiel 2</h3>
         <hr />
         <div class="[ form-group ]">
             <input type="checkbox" name="tw2_game2-default" id="tw2_game2-default" autocomplete="off" />
@@ -1541,10 +1541,10 @@
                     </label>
             </div>
         </div>
-        <input type="text" class="form-control" id="completly_different">
+        <input type="text" class="form-control" id="tw2_info">
     </div>
     <div class="tw_game">
-        <h3>Spielkontrolle</h3>
+        <h3>Spielkontrolle Spiel 3</h3>
         <hr />
         <div class="[ form-group ]">
             <input type="checkbox" name="tw3_game3-default" id="tw3_game3-default" autocomplete="off" />
@@ -1618,10 +1618,10 @@
                     </label>
             </div>
         </div>
-        <input type="text" class="form-control" id="completly_different">
+        <input type="text" class="form-control" id="tw3_info">
     </div>
     <div class="tw_game">
-        <h3>Spielkontrolle</h3>
+        <h3>Spielkontrolle Spiel 4</h3>
         <hr />
         <div class="[ form-group ]">
             <input type="checkbox" name="tw4_game4-default" id="tw4_game4-default" autocomplete="off" />
@@ -1695,10 +1695,10 @@
                     </label>
             </div>
         </div>
-        <input type="text" class="form-control" id="completly_different">
+        <input type="text" class="form-control" id="tw4_info">
     </div>
     <div class="tw_game">
-        <h3>Spielkontrolle</h3>
+        <h3>Spielkontrolle Spiel 5</h3>
         <hr />
         <div class="[ form-group ]">
             <input type="checkbox" name="tw5_game5-default" id="tw5_game5-default" autocomplete="off" />
@@ -1772,10 +1772,10 @@
                     </label>
             </div>
         </div>
-        <input type="text" class="form-control" id="completly_different">
+        <input type="text" class="form-control" id="tw5_info">
     </div>
     <div class="tw_game">
-        <h3>Spielkontrolle</h3>
+        <h3>Spielkontrolle Spiel 6</h3>
         <hr />
         <div class="[ form-group ]">
             <input type="checkbox" name="tw6_game6-default" id="tw6_game6-default" autocomplete="off" />
@@ -1844,12 +1844,12 @@
                         <span class="[ glyphicon glyphicon-ok ]"></span>
                         <span> </span>
                     </label>
-                <label for="tw6_game6-winRight" class="[ btn btn-default ]">
+                <label for="tw6_game6-winRight" class="[ btn btn-default active]">
                         Win Rechts
                     </label>
             </div>
         </div>
-        <input type="text" class="form-control" id="completly_different">
+        <input type="text" class="form-control" id="tw6_info">
     </div>
 </div>
 <script>
@@ -2160,6 +2160,43 @@
         $('#table8_game8-success').prop('checked'),
         $('#table8_game8-danger').prop('checked'),
         $('#table8_game8-info').prop('checked')];
+        var teeworlds_game1_button = [$('#tw1_game1-default').prop('checked'),
+        $('#tw1_game1-success').prop('checked'),
+        $('#tw1_game1-danger').prop('checked'),
+        $('#tw1_game1-info').prop('checked'),
+        $('#tw1_game1-winLeft').prop('checked'),
+        $('#tw1_game1-winRight').prop('checked')];
+        var teeworlds_game2_button = [$('#tw2_game2-default').prop('checked'),
+        $('#tw2_game2-success').prop('checked'),
+        $('#tw2_game2-danger').prop('checked'),
+        $('#tw2_game2-info').prop('checked'),
+        $('#tw2_game2-winLeft').prop('checked'),
+        $('#tw2_game2-winRight').prop('checked')];
+        var teeworlds_game3_button = [$('#tw3_game3-default').prop('checked'),
+        $('#tw3_game3-success').prop('checked'),
+        $('#tw3_game3-danger').prop('checked'),
+        $('#tw3_game3-info').prop('checked'),
+        $('#tw3_game3-winLeft').prop('checked'),
+        $('#tw3_game3-winRight').prop('checked')];
+        var teeworlds_game4_button = [$('#tw4_game4-default').prop('checked'),
+        $('#tw4_game4-success').prop('checked'),
+        $('#tw4_game4-danger').prop('checked'),
+        $('#tw4_game4-info').prop('checked'),
+        $('#tw4_game4-winLeft').prop('checked'),
+        $('#tw4_game4-winRight').prop('checked')];
+        var teeworlds_game5_button = [$('#tw5_game5-default').prop('checked'),
+        $('#tw5_game5-success').prop('checked'),
+        $('#tw5_game5-danger').prop('checked'),
+        $('#tw5_game5-info').prop('checked'),
+        $('#tw5_game5-winLeft').prop('checked'),
+        $('#tw5_game5-winRight').prop('checked')];
+        var teeworlds_game6_button = [$('#tw6_game6-default').prop('checked'),
+        $('#tw6_game6-success').prop('checked'),
+        $('#tw6_game6-danger').prop('checked'),
+        $('#tw6_game6-info').prop('checked'),
+        $('#tw6_game6-winLeft').prop('checked'),
+        $('#tw6_game6-winRight').prop('checked')];
+        var teeworlds_info = [$('#tw1_info').val(),$('#tw2_info').val(),$('#tw3_info').val(),$('#tw4_info').val(),$('#tw5_info').val(),$('#tw6_info').val()];
 
         $.post("admin-turnierbaum-update.php", {
             bomberman_table1: bomberman_table1,
@@ -2183,8 +2220,14 @@
             bomberman_table5_button: bomberman_table5_button,
             bomberman_table6_button: bomberman_table6_button,
             bomberman_table7_button: bomberman_table7_button,
-            bomberman_table8_button: bomberman_table8_button
-
+            bomberman_table8_button: bomberman_table8_button,
+            teeworlds_game1_button: teeworlds_game1_button,
+            teeworlds_game2_button: teeworlds_game2_button,
+            teeworlds_game3_button: teeworlds_game3_button,
+            teeworlds_game4_button: teeworlds_game4_button,
+            teeworlds_game5_button: teeworlds_game5_button,
+            teeworlds_game6_button: teeworlds_game6_button,
+            teeworlds_info: teeworlds_info
         });
         return false;
     });

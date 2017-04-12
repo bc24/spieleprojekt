@@ -33,6 +33,7 @@
 
 .icon_und_spielNummer {
     width: 120px;
+    margin-top: -35px;
 }
 
 #gameNumber {
@@ -41,7 +42,7 @@
 }
 
 .teams_und_vs {
-    margin-top: 3%;
+    margin-top: 0%;
     text-align: center;
 }
 
@@ -73,6 +74,15 @@
 }
 #spielerliste {
   font-size: 30px;
-  margin-left: 165%;
+  margin-left: 149%;
   margin-top: -12%;
+}
+.active-game-tw-glyp {
+  color: green;
+}
+.finished-game-tw-glyp {
+  color: red;
+}
+.finished-game-tw-text {
+  text-decoration: underline;
 }

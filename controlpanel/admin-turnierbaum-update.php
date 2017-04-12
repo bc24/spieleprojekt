@@ -22,7 +22,16 @@ $bomberman_table5_button = $_POST['bomberman_table5_button'];
 $bomberman_table6_button = $_POST['bomberman_table6_button'];
 $bomberman_table7_button = $_POST['bomberman_table7_button'];
 $bomberman_table8_button = $_POST['bomberman_table8_button'];
-
+$teeworlds_game1_button = $_POST['teeworlds_game1_button'];
+$teeworlds_game2_button = $_POST['teeworlds_game2_button'];
+$teeworlds_game3_button = $_POST['teeworlds_game3_button'];
+$teeworlds_game4_button = $_POST['teeworlds_game4_button'];
+$teeworlds_game5_button = $_POST['teeworlds_game5_button'];
+$teeworlds_game6_button = $_POST['teeworlds_game6_button'];
+$tw_table_rightwin = array("notwon", "notwon", "notwon", "notwon", "notwon", "notwon");
+$tw_table_leftwin = array("notwon", "notwon", "notwon", "notwon", "notwon", "notwon");
+$tw_table_info =array("","","","","","");
+$tw_table = array("inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game");
 $bb_table = array("inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game", "inactive-game");
 if ($bomberman_table1_button[1] == 'true')
 {
@@ -88,6 +97,162 @@ if ($bomberman_table8_button[2] == 'true')
 {
   $bb_table[7] = "closed-game";
 }
+//Teeworlds Spielkontrolle Spiel 1
+if ($teeworlds_game1_button[1] == 'true')
+{
+  $tw_table[0] = "active-game-tw-glyp";
+}
+if ($teeworlds_game1_button[2] == 'true')
+{
+  $tw_table[0] = "finished-game-tw-glyp";
+}
+if ($teeworlds_game1_button[3] == 'true')
+{
+  $tw_table_info[0] = "<div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      Spiel findet auf folgender IP statt:
+    </div>
+  </div>";
+}
+if ($teeworlds_game1_button[4] == 'true')
+{
+  $tw_table_leftwin[0] = "finished-game-tw-text";
+}
+if ($teeworlds_game1_button[5] == 'true')
+{
+  $tw_table_rightwin[0] = "finished-game-tw-text";
+}
+//Teeworlds Spielkontrolle Spiel 2
+if ($teeworlds_game2_button[1] == 'true')
+{
+  $tw_table[1] = "active-game-tw-glyp";
+}
+if ($teeworlds_game2_button[2] == 'true')
+{
+  $tw_table[1] = "finished-game-tw-glyp";
+}
+if ($teeworlds_game2_button[3] == 'true')
+{
+  $tw_table_info[1] = "<div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      Spiel findet auf folgender IP statt:
+    </div>
+  </div>";
+}
+if ($teeworlds_game2_button[4] == 'true')
+{
+  $tw_table_leftwin[1] = "finished-game-tw-text";
+}
+if ($teeworlds_game2_button[5] == 'true')
+{
+  $tw_table_rightwin[1] = "finished-game-tw-text";
+}
+//Teeworlds Spielkontrolle Spiel 3
+if ($teeworlds_game3_button[1] == 'true')
+{
+  $tw_table[2] = "active-game-tw-glyp";
+}
+if ($teeworlds_game3_button[2] == 'true')
+{
+  $tw_table[2] = "finished-game-tw-glyp";
+}
+if ($teeworlds_game3_button[3] == 'true')
+{
+  $tw_table_info[2] = "<div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      Spiel findet auf folgender IP statt:
+    </div>
+  </div>";
+}
+if ($teeworlds_game3_button[4] == 'true')
+{
+  $tw_table_leftwin[2] = "finished-game-tw-text";
+}
+if ($teeworlds_game3_button[5] == 'true')
+{
+  $tw_table_rightwin[2] = "finished-game-tw-text";
+}
+//Teeworlds Spielkontrolle Spiel 4
+if ($teeworlds_game4_button[1] == 'true')
+{
+  $tw_table[3] = "active-game-tw-glyp";
+}
+if ($teeworlds_game4_button[2] == 'true')
+{
+  $tw_table[3] = "finished-game-tw-glyp";
+}
+if ($teeworlds_game4_button[3] == 'true')
+{
+  $tw_table_info[3] = "<div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      Spiel findet auf folgender IP statt:
+    </div>
+  </div>";
+}
+if ($teeworlds_game4_button[4] == 'true')
+{
+  $tw_table_leftwin[3] = "finished-game-tw-text";
+}
+if ($teeworlds_game4_button[5] == 'true')
+{
+  $tw_table_rightwin[3] = "finished-game-tw-text";
+}
+//Teeworlds Spielkontrolle Spiel 5
+if ($teeworlds_game5_button[1] == 'true')
+{
+  $tw_table[4] = "active-game-tw-glyp";
+}
+if ($teeworlds_game5_button[2] == 'true')
+{
+  $tw_table[4] = "finished-game-tw-glyp";
+}
+if ($teeworlds_game5_button[3] == 'true')
+{
+  $tw_table_info[4] = "<div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      Spiel findet auf folgender IP statt:
+    </div>
+  </div>";
+}
+if ($teeworlds_game5_button[4] == 'true')
+{
+  $tw_table_leftwin[4] = "finished-game-tw-text";
+}
+if ($teeworlds_game5_button[5] == 'true')
+{
+  $tw_table_rightwin[4] = "finished-game-tw-text";
+}
+//Teeworlds Spielkontrolle Spiel 6
+if ($teeworlds_game6_button[1] == 'true')
+{
+  $tw_table[5] = "active-game-tw-glyp";
+}
+if ($teeworlds_game6_button[2] == 'true')
+{
+  $tw_table[5] = "finished-game-tw-glyp";
+}
+if ($teeworlds_game6_button[3] == 'true')
+{
+  $tw_table_info[5] = "<div class='panel panel-primary'>
+    <div class='panel-heading'>Hinweise zum Spiel</div>
+    <div class='panel-body'>
+      Spiel findet auf folgender IP statt:
+    </div>
+  </div>";
+}
+if ($teeworlds_game6_button[4] == 'true')
+{
+  $tw_table_leftwin[5] = "finished-game-tw-text";
+}
+if ($teeworlds_game6_button[5] == 'true')
+{
+  $tw_table_rightwin[5] = "finished-game-tw-text";
+}
 file_put_contents('../turnierbaum/turnierbaum-test.html',
 "
 <!-- Start des Headers -->
@@ -116,15 +281,15 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 </div>
 <!-- Ende des Headers-Vorrunde-Bomberman -->
 <!-- Start des Table-Raum1-Bomberman -->
-<div class='thumbnail'>
-    <table class='table table-bordered $bb_table[0]'>
+<div class='thumbnail $bb_table[0]'>
+    <table class='table table-bordered'>
         <thead>
             <tr>
                 <th>Raum 1</th>
-                <th>$bomberman_table1[0]</th>
-                <th>$bomberman_table1[1]</th>
-                <th>$bomberman_table1[2]</th>
-                <th>$bomberman_table1[3]</th>
+                <th>Sara</th>
+                <th>Alec</th>
+                <th>Kevin K.</th>
+                <th>Dennis</th>
             </tr>
         </thead>
         <tbody>
@@ -174,18 +339,21 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
         </tr>
         </thead>
     </table>
+    <div>
+    $bb_info[0]
+    </div>
 </div>
 <!-- Ende des Table-Raum1-Bomberman -->
 <!-- Start des Table-Raum2-Bomberman -->
-<div class='thumbnail'>
-<table class='table table-bordered $bb_table[1]'>
+<div class='thumbnail $bb_table[1]'>
+<table class='table table-bordered'>
     <thead>
         <tr>
-            <th>Raum 1</th>
-            <th>$bomberman_table2[0]</th>
-            <th>$bomberman_table2[1]</th>
-            <th>$bomberman_table2[2]</th>
-            <th>$bomberman_table2[3]</th>
+            <th>Raum 2</th>
+            <th>Eric</th>
+            <th>Cora</th>
+            <th>Raphael</th>
+            <th>Erik</th>
         </tr>
     </thead>
     <tbody>
@@ -238,15 +406,15 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 </div>
 <!-- Ende des Table-Raum2-Bomberman -->
 <!-- Start des Table-Raum3-Bomberman -->
-<div class='thumbnail'>
-<table class='table table-bordered $bb_table[2]'>
+<div class='thumbnail $bb_table[2]'>
+<table class='table table-bordered'>
     <thead>
         <tr>
-            <th>Raum 1</th>
-            <th>$bomberman_table3[0]</th>
-            <th>$bomberman_table3[1]</th>
-            <th>$bomberman_table3[2]</th>
-            <th>$bomberman_table3[3]</th>
+            <th>Raum 3</th>
+            <th>Noah</th>
+            <th>Tom</th>
+            <th>Max</th>
+            <th>Konstantin</th>
         </tr>
     </thead>
     <tbody>
@@ -299,15 +467,15 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 </div>
 <!-- Ende des Table-Raum3-Bomberman -->
 <!-- Start des Table-Raum4-Bomberman -->
-<div class='thumbnail'>
-<table class='table table-bordered $bb_table[3]'>
+<div class='thumbnail $bb_table[3]'>
+<table class='table table-bordered'>
     <thead>
         <tr>
-            <th>Raum 1</th>
-            <th>$bomberman_table4[0]</th>
-            <th>$bomberman_table4[1]</th>
-            <th>$bomberman_table4[2]</th>
-            <th>$bomberman_table4[3]</th>
+            <th>Raum 4</th>
+            <th>Gregor</th>
+            <th>Roman</th>
+            <th>Richard</th>
+            <th>Julian</th>
         </tr>
     </thead>
     <tbody>
@@ -365,8 +533,8 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 </div>
 <!-- Ende des Headers-Finalrunde-Bomberman -->
 <!-- Start des Table-Raum1-Bomberman -->
-<div class='thumbnail'>
-<table class='table table-bordered $bb_table[4]'>
+<div class='thumbnail $bb_table[4]'>
+<table class='table table-bordered'>
     <thead>
         <tr>
             <th>Raum 1</th>
@@ -426,11 +594,11 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 </div>
 <!-- Ende des Table-Raum1-Bomberman -->
 <!-- Start des Table-Raum2-Bomberman -->
-<div class='thumbnail'>
-<table class='table table-bordered $bb_table[5]'>
+<div class='thumbnail $bb_table[5]'>
+<table class='table table-bordered'>
     <thead>
         <tr>
-            <th>Raum 1</th>
+            <th>Raum 2</th>
             <th>$bomberman_table6[0]</th>
             <th>$bomberman_table6[1]</th>
             <th>$bomberman_table6[2]</th>
@@ -487,11 +655,11 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 </div>
 <!-- Ende des Table-Raum2-Bomberman -->
 <!-- Start des Table-Raum3-Bomberman -->
-<div class='thumbnail'>
-<table class='table table-bordered $bb_table[6]'>
+<div class='thumbnail $bb_table[6]'>
+<table class='table table-bordered'>
     <thead>
         <tr>
-            <th>Raum 1</th>
+            <th>Raum 3</th>
             <th>$bomberman_table7[0]</th>
             <th>$bomberman_table7[1]</th>
             <th>$bomberman_table7[2]</th>
@@ -548,11 +716,11 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
 </div>
 <!-- Ende des Table-Raum3-Bomberman -->
 <!-- Start des Table-Raum4-Bomberman -->
-<div class='thumbnail'>
-<table class='table table-bordered $bb_table[7]'>
+<div class='thumbnail $bb_table[7]'>
+<table class='table table-bordered'>
     <thead>
         <tr>
-            <th>Raum 1</th>
+            <th>Raum 4</th>
             <th>$bomberman_table8[0]</th>
             <th>$bomberman_table8[1]</th>
             <th>$bomberman_table8[2]</th>
@@ -617,16 +785,16 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
     <div class='container'>
         <div class='row'>
             <div class='col-md-2'>
-                <div class='icon_und_spielNummer'>
+                <div class='icon_und_spielNummer $tw_table[0]'>
                     <span class='glyphicon glyphicon-play-circle' aria-hidden='true'></span>
                     <h3 id='gameNumber'>Spiel 1</h3>
                 </div>
             </div>
             <div class='col-md-9'>
                 <div class='teams_und_vs'>
-                    <h3><span>Team 1 </span></h3>
+                    <h3 class=' $tw_table_leftwin[0] '><span>Team 1 </span></h3>
                     <h3><span>VS </span></h3>
-                    <h3><span>Team 2</span></h3>
+                    <h3 class=' $tw_table_rightwin[0] '><span>Team 2</span></h3>
                 </div>
             </div>
             <div class='col-md-9 col-md-offset-1'>
@@ -645,6 +813,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             </div>
         </div>
     </div>
+    <div>
+    $tw_table_info[0]
+    </div>
 </div>
 <!-- Ende des Spiel1-Teeworlds -->
 <!-- Start des Spiel2-Teeworlds -->
@@ -659,9 +830,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             </div>
             <div class='col-md-9'>
                 <div class='teams_und_vs'>
-                    <h3><span>Team 3 </span></h3>
+                    <h3 class=' $tw_table_leftwin[1] '>Team 3 </span></h3>
                     <h3><span>VS </span></h3>
-                    <h3><span>Team 4</span></h3>
+                    <h3 class=' $tw_table_rightwin[1] '>Team 4</span></h3>
                 </div>
             </div>
             <div class='col-md-9 col-md-offset-1'>
@@ -680,6 +851,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             </div>
         </div>
     </div>
+    <div>
+    $tw_table_info[1]
+    </div>
 </div>
 <!-- Ende des Spiel2-Teeworlds -->
 <!-- Start des Spiel3-Teeworlds -->
@@ -694,9 +868,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             </div>
             <div class='col-md-9'>
                 <div class='teams_und_vs'>
-                    <h3><span>Team 1 </span></h3>
+                    <h3 class=' $tw_table_leftwin[2] '>Team 1 </span></h3>
                     <h3><span>VS </span></h3>
-                    <h3><span>Team 3</span></h3>
+                    <h3 class=' $tw_table_rightwin[2] '>Team 3</span></h3>
                 </div>
             </div>
             <div class='col-md-9 col-md-offset-1'>
@@ -715,6 +889,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             </div>
         </div>
     </div>
+    <div>
+    $tw_table_info[2]
+    </div>
 </div>
 <!-- Ende des Spiel3-Teeworlds -->
 <!-- Start des Spiel4-Teeworlds -->
@@ -729,9 +906,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             </div>
             <div class='col-md-9'>
                 <div class='teams_und_vs'>
-                    <h3><span>Team 2 </span></h3>
+                    <h3 class=' $tw_table_leftwin[3] '>Team 2 </span></h3>
                     <h3><span>VS </span></h3>
-                    <h3><span>Team 4</span></h3>
+                    <h3 class=' $tw_table_rightwin[3] '>Team 4</span></h3>
                 </div>
             </div>
             <div class='col-md-9 col-md-offset-1'>
@@ -750,6 +927,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             </div>
         </div>
     </div>
+    <div>
+    $tw_table_info[3]
+    </div>
 </div>
 <!-- Ende des Spiel4-Teeworlds -->
 <!-- Start des Spiel5-Teeworlds -->
@@ -764,9 +944,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             </div>
             <div class='col-md-9'>
                 <div class='teams_und_vs'>
-                    <h3><span>Team 1 </span></h3>
+                    <h3 class=' $tw_table_leftwin[4] '>Team 1 </span></h3>
                     <h3><span>VS </span></h3>
-                    <h3><span>Team 4</span></h3>
+                    <h3 class=' $tw_table_rightwin[4] '>Team 4</span></h3>
                 </div>
             </div>
             <div class='col-md-9 col-md-offset-1'>
@@ -785,6 +965,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             </div>
         </div>
     </div>
+    <div>
+    $tw_table_info[4]
+    </div>
 </div>
 <!-- Ende des Spiel5-Teeworlds -->
 <!-- Start des Spiel6-Teeworlds -->
@@ -799,9 +982,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             </div>
             <div class='col-md-9'>
                 <div class='teams_und_vs'>
-                    <h3><span>Team 2 </span></h3>
+                    <h3 class=' $tw_table_leftwin[5] '>Team 2 </span></h3>
                     <h3><span>VS </span></h3>
-                    <h3><span>Team 3</span></h3>
+                    <h3 class=' $tw_table_rightwin[5] '>Team 3</span></h3>
                 </div>
             </div>
             <div class='col-md-9 col-md-offset-1'>
@@ -819,6 +1002,9 @@ file_put_contents('../turnierbaum/turnierbaum-test.html',
             </div>
             </div>
         </div>
+    </div>
+    <div>
+    $tw_table_info[5]
     </div>
 </div>
 <!-- Ende des Spiel6-Teeworlds -->
