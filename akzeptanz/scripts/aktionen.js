@@ -1,3 +1,4 @@
-$("#submitButton").click(function(){
-    $("#bestaetigung").text("Ihre Daten wurden Übermittelt!");
+$("#submitButton").click(function () {
+    $("#hinweis").css("opacity":"1");
 });
+// geht noch nciht !!!
