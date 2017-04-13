@@ -8,10 +8,6 @@
 
     <!-- jquery script -->
     <script src="scripts\jquery-3.2.0.min.js"></script>
-    <!-- jquery UI script -->
-    <!-- <script src="scripts\jquery-ui-1.12.1.custom\jquery-ui.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="scripts\jquery-ui-1.12.1.custom\jquery-ui.min.css">
-    <link rel="stylesheet" type="text/css" href="scripts\jquery-ui-1.12.1.custom\jquery-ui.structure.css"> -->
 
     <!-- Stylesheet standard.css -->
     <link rel="stylesheet" type="text/css" href="stylesheets/rangestyle.css">
@@ -41,13 +37,17 @@
   </span>
 
 
-
-
   <form method="post">
-    <div id="bestaetigung">
-      <!-- Bei absenden bestätigung -->
-      a
+    <!-- Bei absenden bestätigung -->
+    <div id="hinweis">
+        <div id="schriftHinweis">
+          Hinweis
+        </div>
+        <div id="bestaetigung">
+          Ihre Daten wurden erfolgreich übermittelt!
+        </div>
     </div>
+
     <div>
       <!-- Bei absenden aufploppen mit Text das es abgesendet wurde -->
     <div>
@@ -238,8 +238,8 @@
 <!-- Nicht an den Anfang da sonst nciht ausgefürht wird -->
 <script src="akzeptanz\scripts\varakzeptanz.js"></script>
 <script src="akzeptanz\scripts\schliessenfragen.js"></script>
-<script src="akzeptanz\scripts\akzeptanz.js?t=< ?= time(); ?"></script>
-<script src="akzeptanz\scripts\animationFragen.js?t=< ?= time(); ?"></script>
-<script src="akzeptanz\scripts\aktionen.js?t=< ?= time(); ?"></script>
+<script src="akzeptanz\scripts\akzeptanz.js"></script>
+<script src="akzeptanz\scripts\animationFragen.js"></script>
+<script src="akzeptanz\scripts\aktionen.js"></script>
 
 </html>

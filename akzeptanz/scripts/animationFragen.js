@@ -154,3 +154,8 @@ $("#pfeil12").click(function(){
     frage12offen = true;
   }
 });
+
+$("#submitButton").click(function(){
+    //alert("Klick");
+    $("#hinweis").animate({opacity: "toggle"}, 1000 , function() {});
+});

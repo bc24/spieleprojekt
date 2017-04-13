@@ -21,6 +21,34 @@ form{
   background-color: white;
 }
 
+#hinweis{
+  opacity: 0;
+  width: 68%;
+  height: 68px;
+  margin-left: 16%;
+  margin-bottom: 15px;
+  /*Border*/
+  border: 2px;
+  border-color: green;
+  border-style: solid;
+  border-radius: 7px;
+}
+
+#schriftHinweis{
+  font-size: 18px;
+  text-align: left;
+  background-color: green;
+  color: white;
+  padding: 5px 0px 5px 10px;
+}
+
+#bestaetigung{
+  padding: 5px 0px 5px 10px;
+  text-align: left;
+
+}
+
+
 #headline{
   text-align: center;
   font-size: 30px;
