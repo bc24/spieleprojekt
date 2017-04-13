@@ -920,7 +920,7 @@ $bb_table_info[7]
     <div class='container'>
         <div class='row'>
             <div class='col-md-2'>
-                <div class='icon_und_spielNummer'>
+                <div class='icon_und_spielNummer $tw_table[1]'>
                     <span class='glyphicon glyphicon-play-circle' aria-hidden='true'></span>
                     <h3 id='gameNumber'>Spiel 2</h3>
                 </div>
@@ -958,7 +958,7 @@ $bb_table_info[7]
     <div class='container'>
         <div class='row'>
             <div class='col-md-2'>
-                <div class='icon_und_spielNummer'>
+                <div class='icon_und_spielNummer $tw_table[2]'>
                     <span class='glyphicon glyphicon-play-circle' aria-hidden='true'></span>
                     <h3 id='gameNumber'>Spiel 3</h3>
                 </div>
@@ -996,7 +996,7 @@ $bb_table_info[7]
     <div class='container'>
         <div class='row'>
             <div class='col-md-2'>
-                <div class='icon_und_spielNummer'>
+                <div class='icon_und_spielNummer $tw_table[3]'>
                     <span class='glyphicon glyphicon-play-circle' aria-hidden='true'></span>
                     <h3 id='gameNumber'>Spiel 4</h3>
                 </div>
@@ -1034,7 +1034,7 @@ $bb_table_info[7]
     <div class='container'>
         <div class='row'>
             <div class='col-md-2'>
-                <div class='icon_und_spielNummer'>
+                <div class='icon_und_spielNummer $tw_table[4]'>
                     <span class='glyphicon glyphicon-play-circle' aria-hidden='true'></span>
                     <h3 id='gameNumber'>Spiel 5</h3>
                 </div>
@@ -1072,7 +1072,7 @@ $bb_table_info[7]
     <div class='container'>
         <div class='row'>
             <div class='col-md-2'>
-                <div class='icon_und_spielNummer'>
+                <div class='icon_und_spielNummer $tw_table[5]'>
                     <span class='glyphicon glyphicon-play-circle' aria-hidden='true'></span>
                     <h3 id='gameNumber'>Spiel 6</h3>
                 </div>

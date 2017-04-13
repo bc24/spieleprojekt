@@ -17,6 +17,15 @@
     <!-- Stylesheet standard.css -->
     <!-- <link rel="stylesheet" href="../stylesheets/login.css"> -->
 </head>
+<?php
+session_start();
+if ($_SESSION['user']=='admin-login')
+  {
+    
+  }
+  else header("Location:admin-login.php");
+
+  ?>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -2250,4 +2259,6 @@
         });
         return false;
     });
+
+
 </script>

@@ -67,7 +67,7 @@ if (!isset($_SESSION['user']))
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Turnierbaum <span class="sr-only">(current)</span></a></li>
-                    <li><a href="./akzeptanz.php">Akzeptanzanalyse</a></li>
+                    <li><a href="<?php include("akzeptanz/akzeptanz-update-index.php"); ?>">Akzeptanzanalyse</a></li>
                     <li id="spielerliste">Spielerliste</li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

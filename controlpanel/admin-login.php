@@ -24,11 +24,6 @@
   include ("../scripts/db_config.php");
   include ("../scripts/admin-login.php");
 
-  if (!isset($_SESSION['user']))
-    {
-      header("Location:login.php");
-    }
-
  ?>
 <body>
     <div class="container">

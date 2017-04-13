@@ -1,1 +1,0 @@
-akzeptanz.php
