@@ -155,7 +155,7 @@ $("#pfeil12").click(function(){
   }
 });
 
-$("#submitButton").click(function(){
-    //alert("Klick");
-    $("#hinweis").animate({opacity: "toggle"}, 1000 , function() {});
-});
+// $("#submitButton").click(function(){
+//     //alert("Klick");
+//     $("#hinweis").animate({opacity: "toggle"}, 1000 , function() {});
+// });
