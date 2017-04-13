@@ -155,7 +155,7 @@
   });
 
   $('#akzeptanz').click(function() {
-    document.location.href='<?php include("akzeptanz/akzeptanz-update-index.php"); ?>';
+    document.location.href='akzeptanz.php'; 
   });
 
   $('#logout').click(function() {
