@@ -1,0 +1,1 @@
+$row2['frag1b'],$row2['frag2b'],$row2['frag3b'],$row2['frag4b'],$row2['frag5b'],$row2['frag6b'],$row2['frag7b'],$row2['frag8b'],$row2['frag9b'],$row2['frag10b'],$row2['frag11b'],$row2['frag12b'],$row2['frag1t'],$row2['frag2t'],$row2['frag3t'],$row2['frag4t'],$row2['frag5t'],$row2['frag6t'],$row2['frag7t'],$row2['frag8t'],$row2['frag9t'],$row2['frag10t'],$row2['frag11t']

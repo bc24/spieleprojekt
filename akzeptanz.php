@@ -34,8 +34,13 @@ $query = "SELECT geschickt FROM user WHERE user = '".$_SESSION['user']."'";
 $result = mysqli_query($link, $query);
 $row = mysqli_fetch_array($result);
 if($row['geschickt'] == "nein"){
-  echo "nein";
   echo '<script type="text/javascript"> anzeigenHinweis(); </script>';
+}
+if($row['geschickt'] == "ja"){
+  $query2 = "SELECT * FROM user WHERE user = '".$_SESSION['user']."'";
+  $result2 = mysqli_query($link, $query2);
+  $row2 = mysqli_fetch_array($result2);
+  echo '<script type="text/javascript"> werteLaden(<?php include(\\"akzeptanz/parameter.php\\"); ?>); </script>';
 }
 
 
