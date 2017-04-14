@@ -11,3 +11,5 @@ var frage9offen = false;
 var frage10offen = false;
 var frage11offen = false;
 var frage12offen = false;
+
+var abgeschickt = "0";

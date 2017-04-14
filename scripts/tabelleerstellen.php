@@ -39,7 +39,8 @@ $sqluser ="CREATE TABLE user(
           `frag10t` INT(2) NOT NULL,
 					`frag11b` INT(2) NOT NULL,
           `frag11t` INT(2) NOT NULL,
-					`frag12b` VARCHAR(400) NOT NULL
+					`frag12b` VARCHAR(400) NOT NULL,
+          `geschickt` VARCHAR(5) NOT NULL
     			) ENGINE = MYISAM;
 				";
 	if (mysqli_query($conn, $sqluser)) {

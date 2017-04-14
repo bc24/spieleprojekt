@@ -22,7 +22,6 @@ form{
 }
 
 #hinweis{
-  opacity: 0;
   width: 68%;
   height: 68px;
   margin-left: 16%;
@@ -66,7 +65,7 @@ form{
 
 .frage{
   width: 85%;
-  margin-bottom: 40px;
+  margin-bottom: 23px;
   margin-left:10%;
   float: left;
   text-align: left;
