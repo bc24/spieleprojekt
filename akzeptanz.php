@@ -36,11 +36,14 @@ $row = mysqli_fetch_array($result);
 if($row['geschickt'] == "nein"){
   echo '<script type="text/javascript"> anzeigenHinweis(); </script>';
 }
+// Übergeben der aktuellen Werte der DB
 if($row['geschickt'] == "ja"){
   $query2 = "SELECT * FROM user WHERE user = '".$_SESSION['user']."'";
   $result2 = mysqli_query($link, $query2);
   $row2 = mysqli_fetch_array($result2);
-  echo '<script type="text/javascript"> werteLaden(<?php include(\\"akzeptanz/parameter.php\\"); ?>); </script>';
+
+  echo '<script type="text/javascript"> werteLaden1('.$row2['frag1b'].','.$row2['frag2b'].','.$row2['frag3b'].','.$row2['frag4b'].','.$row2['frag5b'].','.$row2['frag6b'].'); </script>';
+  echo '<script type="text/javascript"> werteLaden2('.$row2['frag7b'].','.$row2['frag8b'].','.$row2['frag9b'].','.$row2['frag10b'].','.$row2['frag11b'].','.$row2['frag12b'].'); </script>';
 }
 
 
