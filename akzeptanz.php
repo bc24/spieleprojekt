@@ -41,9 +41,11 @@ if($row['geschickt'] == "ja"){
   $query2 = "SELECT * FROM user WHERE user = '".$_SESSION['user']."'";
   $result2 = mysqli_query($link, $query2);
   $row2 = mysqli_fetch_array($result2);
-
   echo '<script type="text/javascript"> werteLaden1('.$row2['frag1b'].','.$row2['frag2b'].','.$row2['frag3b'].','.$row2['frag4b'].','.$row2['frag5b'].','.$row2['frag6b'].'); </script>';
-  echo '<script type="text/javascript"> werteLaden2('.$row2['frag7b'].','.$row2['frag8b'].','.$row2['frag9b'].','.$row2['frag10b'].','.$row2['frag11b'].','.$row2['frag12b'].'); </script>';
+  echo '<script type="text/javascript"> werteLaden2('.$row2['frag7b'].','.$row2['frag8b'].','.$row2['frag9b'].','.$row2['frag10b'].','.$row2['frag11b'].'); </script>';
+  echo '<script type="text/javascript"> werteLaden3('.$row2['frag1t'].','.$row2['frag2t'].','.$row2['frag3t'].','.$row2['frag4t'].','.$row2['frag5t'].','.$row2['frag6t'].'); </script>';
+  echo '<script type="text/javascript"> werteLaden4('.$row2['frag7t'].','.$row2['frag8t'].','.$row2['frag9t'].','.$row2['frag10t'].','.$row2['frag11t'].'); </script>';
+  // echo '<script type="text/javascript"> werteLaden5('.$row2['frag12b'].'); </script>';
 }
 
 
