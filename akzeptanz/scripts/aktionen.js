@@ -56,9 +56,31 @@ function werteLaden4(f7t,f8t,f9t,f10t,f11t) {
   $("#wertFrage10Teeworld").html(f10t);
   $("#frage11Teeworld").val(f11t);
   $("#wertFrage11Teeworld").html(f11t);
-
 }
 
-// function werteLaden5(text){
-//   $("#verbesserung").val(text);
-// }
+function openall(){
+  $("#pfeil1").click();
+  $("#pfeil2").click();
+  $("#pfeil3").click();
+  $("#pfeil4").click();
+  $("#pfeil5").click();
+  $("#pfeil6").click();
+  $("#pfeil7").click();
+  $("#pfeil8").click();
+  $("#pfeil9").click();
+  $("#pfeil10").click();
+  $("#pfeil11").click();
+  $("#pfeil12").click();
+  if(offen){
+    $("#buttonStyle").html("Fragen öffnen");
+    $("#buttonStyle").css("background-color" , "#2c9b03");
+    $("#buttonStyle").css("border-color" , "#2c9b03");
+    offen = false;
+  }
+  else{
+    $("#buttonStyle").html("Fragen schließen");
+    $("#buttonStyle").css("background-color" , "#9e0707");
+    $("#buttonStyle").css("border-color" , "#9e0707");
+    offen = true;
+  }
+}
